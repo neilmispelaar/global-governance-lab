@@ -1,0 +1,18 @@
+
+# DEVELOPMENT ADDRESS 
+baseURL = "/"
+
+
+# PRODUCTION ADDRESS 
+#baseURL = "https://globalgovernance.lab.mcgill.ca/"
+
+
+# HUGO SETTINGS 
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm", "sitemap"]
+theme = "global-governance-lab-theme"
+
+
+# SITE SETTINGS 
+title = "Global Governance Lab"
+languageCode = "en-ca"
+

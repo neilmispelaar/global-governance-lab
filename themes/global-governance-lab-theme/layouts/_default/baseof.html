@@ -1,0 +1,15 @@
+<!doctype html>
+<html class="no-js" {{with .Site.LanguageCode}} lang="{{ . }}"{{end}}>
+    <head>    
+        <title>{{ .Title }} · {{ .Site.Title }}</title>
+        {{ partial "metadata.html" . }}
+        {{ partial "headresources.html" . }}
+    </head>
+
+    <body>
+        
+        {{ block "main" . }}{{ end }}
+        {{ partial "footerresources.html" . }}
+
+    </body>
+</html>

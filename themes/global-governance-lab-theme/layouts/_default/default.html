@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+        {{ partial "skiplinks.html" . }}
+
+        {{ partial "header.html" . }}
+
+        <main role="main" property="mainContentOfPage">
+
+            {{ .Content }}
+
+        </main>
+
+        {{ partial "footer.html" . }}
+
+{{ end }}

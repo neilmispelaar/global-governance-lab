@@ -1,0 +1,10 @@
+        
+        <!-- Remove the no-js class from the HTML element --> 
+        <script>
+            document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+        </script>
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="{{ "icon.png" | relURL }}">
+        <link rel="stylesheet" href="{{ "css/vendor/bootstrap.min.css" | relURL }}">
+        <link rel="stylesheet" href="{{ "css/normalize.css" | relURL }}">
+        <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">

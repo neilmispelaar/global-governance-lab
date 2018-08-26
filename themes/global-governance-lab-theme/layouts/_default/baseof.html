@@ -6,12 +6,10 @@
         {{ partial "headresources.html" . }}
     </head>
 
-    <body>
+    <body class="gglab-site-container">
         
-        <div class="gglab-site-container">
-            {{ block "main" . }}{{ end }}
-        </div>
-
+        {{ block "main" . }}{{ end }}
+        
         {{ partial "footerresources.html" . }}
 
     </body>

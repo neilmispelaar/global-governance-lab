@@ -7,7 +7,7 @@ baseURL = "/"
 #baseURL = "https://globalgovernance.lab.mcgill.ca/"
 
 
-# HUGO SETTINGS 
+# HUGO SETTINGS
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm", "sitemap"]
 theme = "global-governance-lab-theme"
 

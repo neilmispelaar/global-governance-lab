@@ -6,8 +6,10 @@
 
         <main role="main" property="mainContentOfPage">
 
-            {{ .Content }}
-
+            <div class="container">
+                    {{ .Content }}
+            </div>
+            
         </main>
 
         {{ partial "footer.html" . }}

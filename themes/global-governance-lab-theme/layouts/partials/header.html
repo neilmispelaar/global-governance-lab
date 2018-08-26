@@ -13,34 +13,47 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ " publications/index.html " | relURL }}">Publications</a>
+                            <a class="nav-link" href="{{ " publications/index.html" | relURL }}">Publications</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ " projects/index.html " | relURL }}">Projects</a>
+                            <a class="nav-link" href="{{ " projects/index.html" | relURL }}">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ " people/index.html " | relURL }}">People</a>
+                            <a class="nav-link" href="{{ " people/index.html" | relURL }}">People</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ " about/index.html " | relURL }}">About</a>
+                            <a class="nav-link" href="{{ " about/index.html" | relURL }}">About</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-    -->
+        --> 
 
-        <div class="pos-f-t">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                    <h5 class="text-white h4">Collapsed content</h5>
-                    <span class="text-muted">Toggleable via the navbar brand.</span>
+        <!-- Site Header -->
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light bg-light py-4 py-sm-5 px-sm-5">
+                <a class="navbar-brand" href="#">
+                    <img src='{{ "images/brand/gg-lab.png" | relURL }}' width="100" alt="">
+                </a>
+
+                <div class="gglab-nav-navbar-open-button-container"></div>
+
+                <div class="navbar-collapse gglab-nav-navbar-container" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ "publications/index.html" | relURL }}">Publications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ "projects/index.html" | relURL }}">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ "people/index.html" | relURL }}">People</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ "about/index.html" | relURL }}">About</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <nav class="navbar navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
             </nav>
-        </div>
+        </header>

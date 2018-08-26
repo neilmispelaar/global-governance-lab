@@ -98,17 +98,97 @@ textarea {
    ========================================================================== */
 
 
+/* ==========================================================================
+   Navigation styles
+   ========================================================================== */
+
+.gglab-nav-navbar-container { 
+    /* background-color: grey;
+    */
+    
+}
+
+/* Hide the open menu button by default */ 
+.gglab-nav-navbar-open-button-container { 
+    display: none;
+}
+
+/* Hide the close menu button by default */ 
+.gglab-nav-navbar-close-button-container { 
+    display: none;
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .gglab-nav-navbar-container { 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        overflow: auto;
+        z-index: 1000;
+        background-color: rgba(23, 73, 124, 1);
+        
+    }
+
+    /* Show the open menu button in small devices */ 
+    .gglab-nav-navbar-open-button-container { 
+        display: block; 
+    }
+
+    /* Show the close menu button in small devices */ 
+    .gglab-nav-navbar-close-button-container { 
+        display: block;
+    }
+    
+    .gglab-nav-navbar-container.open {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+
+        transition: opacity .35s, visibility .35s, height .35s;
+    }
+
+}
 
 
 
+/* ==========================================================================
+   Global Development Lab Theme Colour Styles
+   ========================================================================== */
+ 
+.bg-light-blue { 
+    background-color: #2BACE2   !important;
+}
+.bg-dark-blue { 
+    background-color: #3A6EB6   !important;
+}
+.bg-light-yellow { 
+    background-color: #fff5e2  !important;
+}
+.bg-yellow { 
+    background-color: #FCB216   !important;
+}
+.bg-green { 
+    background-color: #70B243   !important;
+} 
 
-
-
-
-
-
-
-
+.text-light-blue { 
+    color: #2BACE2   !important;
+}
+.text-dark-blue { 
+    color: #3A6EB6   !important;
+}
+.text-yellow { 
+    color: #FCB216   !important;
+}
+.text-green { 
+    color: #70B243   !important;
+}
 
 
 

@@ -8,7 +8,10 @@
 
     <body>
         
-        {{ block "main" . }}{{ end }}
+        <div class="gglab-site-container">
+            {{ block "main" . }}{{ end }}
+        </div>
+
         {{ partial "footerresources.html" . }}
 
     </body>

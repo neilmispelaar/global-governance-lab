@@ -151,6 +151,7 @@ textarea {
         display: block; 
     }
 
+    
     /* Show the close menu button in small devices */ 
     .gglab-nav-navbar-close-button-container { 
         display: flex;
@@ -164,13 +165,14 @@ textarea {
 
     } 
 
-    .gglab-nav-navbar-close-button-container button { 
+    /* Style the open and close navigation buttons */ 
+    .gglab-nav-navbar-open-button-container button, .gglab-nav-navbar-close-button-container button { 
         background-color: #70B243;
         color: #ffffff;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     
-    .gglab-nav-navbar-close-button-container button:hover { 
+    .gglab-nav-navbar-open-button-container button:hover, .gglab-nav-navbar-close-button-container button:hover { 
         background-color: #466f2a;
         color: #ffffff;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.10);

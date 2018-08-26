@@ -333,6 +333,65 @@ body.noScroll {
 }
 
 
+
+/* ==========================================================================
+   Utility classes
+   ========================================================================== */
+
+.font-size-r1-1 {font-size: 1.1rem;}
+.font-size-r1-2 {font-size: 1.2rem;}
+.font-size-r1-3 {font-size: 1.3rem;}
+.font-size-r1-4 {font-size: 1.4rem;}
+.font-size-r1-5 {font-size: 1.5rem;}
+.font-size-r1-6 {font-size: 1.6rem;}
+.font-size-r1-7 {font-size: 1.7rem;}
+.font-size-r1-8 {font-size: 1.8rem;}
+.font-size-r1-9 {font-size: 1.9rem;}
+.font-size-r2-0 {font-size: 2.0rem;}
+
+
+.display-1 {
+    font-size: 2.5rem !important;
+    font-weight: 300 !important;
+}
+.display-2 {
+    font-size: 3.0rem !important;
+    font-weight: 300 !important;
+}
+.display-3 {
+    font-size: 2.5rem !important;
+    font-weight: 300 !important;
+}
+.display-4 {
+    font-size: 2.0rem !important;
+    font-weight: 300 !important;
+}
+  
+  
+@media (min-width: 576px) { 
+    /* This is what you see on desktop */ 
+    .display-1 {
+        font-size: 5rem !important;
+        font-weight: 300 !important;
+    }
+    .display-2 {
+        font-size: 4.0rem !important;
+        font-weight: 300 !important;
+    }
+    .display-3 {
+        font-size: 3.5rem !important;
+        font-weight: 300 !important;
+    }
+    .display-4 {
+        font-size: 3.0rem !important;
+        font-weight: 300 !important;
+    }
+
+}
+  
+  
+ 
+
 /* ==========================================================================
    SVG Icons - svgicons.sparkk.fr
    ========================================================================== */

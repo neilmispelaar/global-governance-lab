@@ -242,17 +242,15 @@ body.noScroll {
     .gglab-nav-navbar-container ul li a { 
         display: block;
         font-size: 2.1rem; 
-        color: rgba(226, 226, 226, 1) !important;
+        color: rgba(240, 240, 240, 1) !important;
         text-align: center;
         font-weight: normal;
-        text-decoration: underline;
     }
 
     .gglab-nav-navbar-container ul li a:hover { 
         color: rgba(200, 200, 200, 1) !important;
         transform: scale(1.1);
-        text-decoration: underline;
-        transition-duration: 0.3s;
+        transition-duration: 0.2s;
         transition-timing-function: linear;
     }
     
@@ -260,8 +258,6 @@ body.noScroll {
         transform: translate(0,0);
         opacity: 1;
     }
-
-
 
     .gglab-nav-navbar-container ul li:nth-of-type(1) { 
         transition-delay: 0s;

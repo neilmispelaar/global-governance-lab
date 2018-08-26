@@ -98,6 +98,39 @@ textarea {
    ========================================================================== */
 
 
+
+
+/* ==========================================================================
+   Global Governance Lab Button Styles
+   ========================================================================== */
+   .btn-green { 
+    background-color: #70B243;
+    color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-green:hover { 
+    background-color: #466f2a;
+    color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.10);
+}
+
+
+.btn-outline-green { 
+    background-color: #ffffff;
+    border: 1px solid #70B243;
+    color: #70B243;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-outline-green:hover { 
+    background-color: #466f2a;
+    color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.10);
+}
+
+
+
 /* ==========================================================================
    Navigation styles
    ========================================================================== */

@@ -138,13 +138,11 @@ body.noScroll {
     overflow: hidden;
 }
 
-
+/*
 .gglab-nav-navbar-container { 
-    /* background-color: grey;
-    */
     
 }
-
+*/
 
 .no-js .gglab-nav-navbar-container {
     
@@ -246,11 +244,18 @@ body.noScroll {
         font-size: 2.1rem; 
         color: rgba(226, 226, 226, 1) !important;
         text-align: center;
-        font-weight: bold;
-        
-        
+        font-weight: normal;
+        text-decoration: underline;
     }
 
+    .gglab-nav-navbar-container ul li a:hover { 
+        color: rgba(200, 200, 200, 1) !important;
+        transform: scale(1.1);
+        text-decoration: underline;
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+    }
+    
     .gglab-nav-navbar-container.open ul li { 
         transform: translate(0,0);
         opacity: 1;

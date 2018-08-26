@@ -115,10 +115,6 @@ jQuery(document).ready(function ($) {
         
         show : function () {
             this.navigationContainer.addClass('open');
-
-            this.page.css({
-                'overflow':'hidden'
-            });
             
             // Set focus after a delay to allow for the annimation
             window.setTimeout(this.setFocusAfterOpen.bind(this), 300);
@@ -133,11 +129,6 @@ jQuery(document).ready(function ($) {
         
         hide : function () {
             this.navigationContainer.removeClass('open');
-
-            this.page.css({
-                'overflow':'auto'
-            });
-
             this.navigationOpenButton.focus();
             
             console.log("Close Menu");

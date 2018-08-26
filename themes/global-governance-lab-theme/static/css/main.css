@@ -108,6 +108,16 @@ textarea {
     
 }
 
+
+.no-js .gglab-nav-navbar-container {
+    
+    position: relative;
+    opacity: 1;
+    display: block;
+    visibility: visible;
+    background-color: transparent;
+}
+
 /* Hide the open menu button by default */ 
 .gglab-nav-navbar-open-button-container { 
     display: none;
@@ -131,7 +141,8 @@ textarea {
         visibility: hidden;
         overflow: auto;
         z-index: 1000;
-        background-color: rgba(23, 73, 124, 1);
+        background-color: #3A6EB6   !important;
+        padding-top: 50px; 
         
     }
 
@@ -142,8 +153,30 @@ textarea {
 
     /* Show the close menu button in small devices */ 
     .gglab-nav-navbar-close-button-container { 
-        display: block;
+        display: flex;
+        margin-top: 50px;
     }
+
+    /* Show the close menu button in small devices */ 
+    .gglab-nav-navbar-close-button-container button{
+        margin-left: auto;
+        margin-right: auto;
+
+    } 
+
+    .gglab-nav-navbar-close-button-container button { 
+        background-color: #70B243;
+        color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .gglab-nav-navbar-close-button-container button:hover { 
+        background-color: #466f2a;
+        color: #ffffff;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.10);
+    }
+    
+    
     
     .gglab-nav-navbar-container.open {
         opacity: 1;
@@ -153,12 +186,82 @@ textarea {
         transition: opacity .35s, visibility .35s, height .35s;
     }
 
+    .gglab-nav-navbar-container ul { 
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .gglab-nav-navbar-container ul li { 
+        transform: translate(-10em,0);
+        opacity: 0;
+
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+        transition-delay: 0s;
+    }
+
+
+    .gglab-nav-navbar-container ul li a { 
+        display: block;
+        font-size: 2.1rem; 
+        color: rgba(226, 226, 226, 1) !important;
+        text-align: center;
+        font-weight: bold;
+        
+        
+    }
+
+    .gglab-nav-navbar-container.open ul li { 
+        transform: translate(0,0);
+        opacity: 1;
+    }
+
+
+
+    .gglab-nav-navbar-container ul li:nth-of-type(1) { 
+        transition-delay: 0s;
+    }
+
+    .gglab-nav-navbar-container ul li:nth-of-type(2) { 
+        transition-delay: 0.15s;
+    }
+
+    .gglab-nav-navbar-container ul li:nth-of-type(3) { 
+        transition-delay: 0.20s;
+    }
+
+    .gglab-nav-navbar-container ul li:nth-of-type(4) { 
+        transition-delay: 0.25s;
+    }
+
+    .gglab-nav-navbar-container ul li:nth-of-type(5) { 
+        transition-delay: 0.30s;
+    }
+
+    .gglab-nav-navbar-container ul li:nth-of-type(6) { 
+        transition-delay: 0.35s;
+    }
+
+    .gglab-nav-navbar-container ul li:nth-of-type(7) { 
+        transition-delay: 0.40s;
+    }
+
+    .gglab-nav-navbar-container ul li:nth-of-type(8) { 
+        transition-delay: 0.45s;
+    }
+
+    .gglab-nav-navbar-container ul li:nth-of-type(9) { 
+        transition-delay: 0.50s;
+    }
+
+
 }
 
 
 
 /* ==========================================================================
-   Global Development Lab Theme Colour Styles
+   Global Governance Lab Theme Colour Styles
    ========================================================================== */
  
 .bg-light-blue { 
@@ -190,6 +293,25 @@ textarea {
     color: #70B243   !important;
 }
 
+
+/* ==========================================================================
+   SVG Icons - svgicons.sparkk.fr
+   ========================================================================== */
+.svg-icon {
+    width: 1em;
+    height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #ffffff;
+}
+
+.svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+}
 
 
 

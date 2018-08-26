@@ -32,15 +32,18 @@
 
         <!-- Site Header -->
         <header>
-            <nav class="navbar navbar-expand-md navbar-light bg-light py-4 py-sm-5 px-sm-5">
+            <nav class="navbar navbar-expand-md navbar-light bg-light py-5 px-sm-5">
                 <a class="navbar-brand" href="#">
                     <img src='{{ "images/brand/gg-lab.png" | relURL }}' width="100" alt="">
                 </a>
 
                 <div class="gglab-nav-navbar-open-button-container"></div>
 
-                <div class="navbar-collapse gglab-nav-navbar-container" id="navbarNavDropdown">
+                <div class="navbar-collapse gglab-nav-navbar-container open" id="navbarNavDropdown">
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ "/index.html" | relURL }}">Home</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ "publications/index.html" | relURL }}">Publications</a>
                         </li>

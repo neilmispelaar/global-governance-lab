@@ -65,7 +65,9 @@ jQuery(document).ready(function ($) {
 
             // Hard coded the navigationOpenButton classname
             this.navigationOpenButtonContainer.append(
-                "<button class=\"btn btn btn-primary navigationOpenButton\" type=\"button\">Menu</button>");
+                "<button class=\"btn btn btn-primary navigationOpenButton\" type=\"button\">Menu " + 
+                "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"svg-icon\" viewBox=\"0 0 20 20\"><path d=\"M 3.314 4.8 h 13.372 c 0.41 0 0.743 -0.333 0.743 -0.743 c 0 -0.41 -0.333 -0.743 -0.743 -0.743 H 3.314 c -0.41 0 -0.743 0.333 -0.743 0.743 C 2.571 4.467 2.904 4.8 3.314 4.8 Z M 16.686 15.2 H 3.314 c -0.41 0 -0.743 0.333 -0.743 0.743 s 0.333 0.743 0.743 0.743 h 13.372 c 0.41 0 0.743 -0.333 0.743 -0.743 S 17.096 15.2 16.686 15.2 Z M 16.686 9.257 H 3.314 c -0.41 0 -0.743 0.333 -0.743 0.743 s 0.333 0.743 0.743 0.743 h 13.372 c 0.41 0 0.743 -0.333 0.743 -0.743 S 17.096 9.257 16.686 9.257 Z\"></path></svg>" +
+                "</button>");
             
         },
 
@@ -73,7 +75,7 @@ jQuery(document).ready(function ($) {
 
             // Hard coded the navigationCloseButton classname
             this.navigationContainer.append(
-                "<div class=\"" + this.navCloseButtonContainerClassName + "\" >" + "<button class=\"btn btn btn-primary navigationCloseButton\" type=\"button\">Close Menu</button>" + "</div>")
+                "<div class=\"" + this.navCloseButtonContainerClassName + "\" >" + "<button class=\"btn  navigationCloseButton\" type=\"button\">Close</button>" + "</div>")
             
         },
         

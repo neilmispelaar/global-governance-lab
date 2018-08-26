@@ -29,7 +29,6 @@ jQuery(document).ready(function ($) {
     var gglabNavigation = {
 
         init : function (siteContainerClassName, navContainerClassName, navOpenButtonContainerClassName, navCloseButtonContainerClassName) {
-
             this.siteContainerClassName = siteContainerClassName; 
             this.navContainerClassName = navContainerClassName;
             this.navOpenButtonContainerClassName = navOpenButtonContainerClassName;
@@ -40,7 +39,6 @@ jQuery(document).ready(function ($) {
         },
         
         cacheDom : function () {
-            
             this.document = $(document);
             this.page = this.document.find('.' + this.siteContainerClassName);
             
@@ -62,7 +60,6 @@ jQuery(document).ready(function ($) {
         },
         
         addNavigationOpenMenuButton : function () {
-
             // Hard coded the navigationOpenButton classname
             this.navigationOpenButtonContainer.append(
                 "<button class=\"btn navigationOpenButton\" type=\"button\">Menu " + 
@@ -72,7 +69,6 @@ jQuery(document).ready(function ($) {
         },
 
         addNavigationCloseMenuButton : function () {
-
             // Hard coded the navigationCloseButton classname
             this.navigationContainer.append(
                 "<div class=\"" + this.navCloseButtonContainerClassName + "\" >" + "<button class=\"btn  navigationCloseButton\" type=\"button\">Close</button>" + "</div>")
@@ -92,7 +88,6 @@ jQuery(document).ready(function ($) {
         
         
         tabKeyMenuFirstChildHandler : function (e) { 
-        
             if ( ( e.keyCode === 9 && e.shiftKey ) && (this.navigationContainer.hasClass('open') === true) ) {
 
                 e.preventDefault();
@@ -103,7 +98,6 @@ jQuery(document).ready(function ($) {
         }, 
         
         tabKeyMenuLastChildHandler : function (e) { 
-        
             if ( ( e.keyCode === 9 && !e.shiftKey ) && (this.navigationContainer.hasClass('open') === true) ) {
 
                 e.preventDefault();
@@ -115,7 +109,6 @@ jQuery(document).ready(function ($) {
         
         show : function () {
             this.navigationContainer.addClass('open');
-            
             this.page.addClass('noScroll');
 
             // Set focus after a delay to allow for the annimation
@@ -139,7 +132,6 @@ jQuery(document).ready(function ($) {
         },
         
         keyUpHandler : function (e) {
-            
             // If escape is pressed and the menu is open then close it
             if (e.keyCode == 27) { // escape key maps to keycode `27`
                 if (this.navigationContainer.hasClass('open') === true) {

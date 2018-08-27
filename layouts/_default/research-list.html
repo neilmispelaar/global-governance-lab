@@ -13,6 +13,26 @@
                         
                         <section>
                             <h2>Ongoing Projects</h2>
+
+
+                            <div class="row">
+                                {{ range where .Pages "Params.research.status" "open" }}
+                                <div class="col-4 my-3">
+                                    <div class="card h-100">
+                                        <img class="card-img-top" src="https://via.placeholder.com/350x150" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{ .Params.research.title }}</h5>
+                                            <p class="card-text"><small class="text-small">{{ .Params.research.author }}</small></p>
+                                            <a href="{{.Permalink | relURL }}" class="btn btn-primary">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{ end }}
+                            </div>
+                        
+
+
+
                             <ul>
                                 {{ range where .Pages "Status" "open" }}
                                 <li>
@@ -20,6 +40,7 @@
                                 </li>
                                 {{ end }}
                             </ul>
+                        
                         </section>
 
                         <section>

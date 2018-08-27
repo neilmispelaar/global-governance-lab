@@ -106,10 +106,10 @@ textarea {
 
 .gglab-default h1 { 
     color: rgb(108, 117, 125);
-    font-size: 2.5rem !important;    
+    font-size: 3rem !important;    
     border-bottom: 1px solid rgb(108, 117, 125);
     padding: 25px 0px 10px 0px;
-
+    font-weight: 500;
     
 }
 

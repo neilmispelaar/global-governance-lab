@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+        {{ partial "skiplinks.html" . }}
+
+        {{ partial "header.html" . }}
+
+        <main role="main" property="mainContentOfPage" class="gglab-default">
+            
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-sm-10">
+                        <h1 property="name" id="mainContent">People</h1>
+
+                        <p>The Global Governance Research-to-Practice Lab is a team of interdisciplinary researchers working on projects related to global issues.</p>
+
+                        <ul>
+                        {{ range .Pages }}
+                            <li>
+                                <p>{{ .Params.Person.Name }}</p>
+                            </li>
+                        {{ end }}
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        {{ partial "footer.html" . }}
+
+{{ end }}

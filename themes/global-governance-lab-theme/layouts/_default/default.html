@@ -4,10 +4,14 @@
 
         {{ partial "header.html" . }}
 
-        <main role="main" property="mainContentOfPage">
-
+        <main role="main" property="mainContentOfPage" class="gglab-default">
+            
             <div class="container">
-                    {{ .Content }}
+                <div class="row justify-content-center">
+                    <div class="col-10 col-sm-10">
+                        {{ .Content }}
+                    </div>
+                </div>
             </div>
             
         </main>

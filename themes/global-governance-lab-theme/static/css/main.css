@@ -97,6 +97,30 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.gglab-default { 
+    color: rgb(108, 117, 125);
+    font-size: 120%;
+    padding: 0px 0px 100px 0px;
+    background-color: #f8f9fa !important;
+}
+
+.gglab-default h1 { 
+    color: rgb(108, 117, 125);
+    font-size: 2.5rem !important;    
+    border-bottom: 1px solid rgb(108, 117, 125);
+    padding: 25px 0px 10px 0px;
+
+    
+}
+
+  
+@media (min-width: 576px) { 
+    /* This is what you see on desktop */ 
+
+    .gglab-default h1 { 
+        font-size: 4rem !important;    
+    }
+}
 
 
 

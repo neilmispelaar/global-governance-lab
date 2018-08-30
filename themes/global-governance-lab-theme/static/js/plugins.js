@@ -33,9 +33,9 @@ jQuery(document).ready(function ($) {
             this.navContainerClassName = gglabNavigationConfig.navContainerClassName;
             this.navOpenButtonContainerClassName = gglabNavigationConfig.navOpenButtonContainerClassName;
             this.navCloseButtonContainerClassName = gglabNavigationConfig.navCloseButtonContainerClassName;
+            this.brandImageContainerClassName = gglabNavigationConfig.brandImageContainerClassName;
             this.brandImageSrc = gglabNavigationConfig.brandImageSrc;
-            this.brandImageClassName = gglabNavigationConfig.brandImageClassName;
-
+            
             this.cacheDom();
             this.bindEvents();
         },
@@ -76,7 +76,8 @@ jQuery(document).ready(function ($) {
         addNavigationBrand : function () {
             // Hard coded the navigationCloseButton classname
             this.navigationContainer.prepend(
-                "<img class=\"" + this.brandImageClassName + "\" src=\"" + this.brandImageSrc + "\" alt=\"\" />")
+                "<div class=\"" + this.brandImageContainerClassName + "\" >" + "<img src=\"" + this.brandImageSrc + "\" alt=\"\" width=\"110\" />" + "</div>")
+    
         },
 
         addNavigationCloseMenuButton : function () {
@@ -163,7 +164,7 @@ jQuery(document).ready(function ($) {
         "navOpenButtonContainerClassName" : "gglab-nav-navbar-open-button-container",
         "navCloseButtonContainerClassName" :  "gglab-nav-navbar-close-button-container",
         "brandImageSrc" : "/images/brand/gg-lab-white.png",
-        "brandImageClassName" : "gglab-nav-navbar-brand-open my-4 mx-4"
+        "brandImageContainerClassName" : "gglab-nav-navbar-brand-container py-4"
     };
 
     // Initialise the Navigation Object

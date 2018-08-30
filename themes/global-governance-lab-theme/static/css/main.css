@@ -180,8 +180,8 @@ body.noScroll {
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
 
-    .gglab-nav-navbar-brand-open { 
-        width: 110px;
+    .gglab-nav-navbar-brand-container { 
+        text-align: center;
     }
     
     .gglab-nav-navbar-container { 

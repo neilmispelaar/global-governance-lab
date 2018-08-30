@@ -28,11 +28,13 @@ jQuery(document).ready(function ($) {
     // Menu Navigation Handler 
     var gglabNavigation = {
 
-        init : function (siteContainerClassName, navContainerClassName, navOpenButtonContainerClassName, navCloseButtonContainerClassName) {
-            this.siteContainerClassName = siteContainerClassName; 
-            this.navContainerClassName = navContainerClassName;
-            this.navOpenButtonContainerClassName = navOpenButtonContainerClassName;
-            this.navCloseButtonContainerClassName = navCloseButtonContainerClassName;
+        init : function (gglabNavigationConfig) {
+            this.siteContainerClassName = gglabNavigationConfig.siteContainerClassName; 
+            this.navContainerClassName = gglabNavigationConfig.navContainerClassName;
+            this.navOpenButtonContainerClassName = gglabNavigationConfig.navOpenButtonContainerClassName;
+            this.navCloseButtonContainerClassName = gglabNavigationConfig.navCloseButtonContainerClassName;
+            this.brandImageSrc = gglabNavigationConfig.brandImageSrc;
+            this.brandImageClassName = gglabNavigationConfig.brandImageClassName;
 
             this.cacheDom();
             this.bindEvents();
@@ -48,6 +50,9 @@ jQuery(document).ready(function ($) {
             // Add the menu button 
             this.addNavigationOpenMenuButton(); 
             this.navigationOpenButton = this.document.find('.navigationOpenButton'); 
+
+            // Add the branding to the menu 
+            this.addNavigationBrand(); 
 
             // Add the close menu button (both the button and container)
             this.addNavigationCloseMenuButton(); 
@@ -66,6 +71,12 @@ jQuery(document).ready(function ($) {
                 "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"svg-icon\" viewBox=\"0 0 20 20\"><path d=\"M 3.314 4.8 h 13.372 c 0.41 0 0.743 -0.333 0.743 -0.743 c 0 -0.41 -0.333 -0.743 -0.743 -0.743 H 3.314 c -0.41 0 -0.743 0.333 -0.743 0.743 C 2.571 4.467 2.904 4.8 3.314 4.8 Z M 16.686 15.2 H 3.314 c -0.41 0 -0.743 0.333 -0.743 0.743 s 0.333 0.743 0.743 0.743 h 13.372 c 0.41 0 0.743 -0.333 0.743 -0.743 S 17.096 15.2 16.686 15.2 Z M 16.686 9.257 H 3.314 c -0.41 0 -0.743 0.333 -0.743 0.743 s 0.333 0.743 0.743 0.743 h 13.372 c 0.41 0 0.743 -0.333 0.743 -0.743 S 17.096 9.257 16.686 9.257 Z\"></path></svg>" +
                 "</button>");
             
+        },
+
+        addNavigationBrand : function () {
+            // Hard coded the navigationCloseButton classname
+            this.navigationContainer.prepend(
+                "<img class=\"" + this.brandImageClassName + "\" src=\"" + this.brandImageSrc + "\" alt=\"\" />")
         },
 
         addNavigationCloseMenuButton : function () {
@@ -142,17 +153,20 @@ jQuery(document).ready(function ($) {
         }
         
     };
-    
+
+     
+
+    // Setup the navigation configuration options
+    var gglabNavigationConfig = { 
+        "siteContainerClassName" : "gglab-site-container",
+        "navContainerClassName" : "gglab-nav-navbar-container",
+        "navOpenButtonContainerClassName" : "gglab-nav-navbar-open-button-container",
+        "navCloseButtonContainerClassName" :  "gglab-nav-navbar-close-button-container",
+        "brandImageSrc" : "/images/brand/gg-lab-white.png",
+        "brandImageClassName" : "gglab-nav-navbar-brand-open my-4 mx-4"
+    };
+
     // Initialise the Navigation Object
-    var siteContainerClassName = "gglab-site-container";
-    var navContainerClassName = "gglab-nav-navbar-container";
-    var navOpenButtonContainerClassName = "gglab-nav-navbar-open-button-container";
-    var navCloseButtonContainerClassName = "gglab-nav-navbar-close-button-container";
-    
-    gglabNavigation.init(
-        siteContainerClassName, 
-        navContainerClassName, 
-        navOpenButtonContainerClassName,
-        navCloseButtonContainerClassName);
+    gglabNavigation.init(gglabNavigationConfig);
     
 });

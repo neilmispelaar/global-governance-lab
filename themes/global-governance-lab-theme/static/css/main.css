@@ -148,8 +148,13 @@ textarea {
 
 }
 
-.gg-lab-page-footer .nav-item .nav-link { 
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .gg-lab-page-footer .gg-lab-page-footer-nav-ul { 
 
+        border-bottom: 1px solid rgb(222, 226, 230);
+
+    }
 }
 
 

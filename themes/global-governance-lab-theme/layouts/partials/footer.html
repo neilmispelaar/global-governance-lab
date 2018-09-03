@@ -1,16 +1,75 @@
+ 
+        <footer class="gg-lab-page-footer">
+            <div class="container-fluid border-top">
+                <div class="container py-4">
+                    
+                    <h2 class="sr-only">Site Footer Information</h2>
 
-		<footer>
-			<div class="container-fluid bg-white py-4 border-top">
-				<div class="container">
-					<h2 class="sr-only">Site Footer Information</h2>
-					<div class="row align-items-center">
-						<div class="col-6">
-							<p class="pt-3 pb-0">Copyright © 2018 McGill University</p>
-						</div>
-						<div class="col-6 text-right">
-							<img src='{{ "images/brand/gg-lab.png" | relURL }}' width="110px" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
+                    <div class="row justify-content-between">
+                        <div class="col-6">
+
+                            <ul class="nav flex-column text-left">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ "/index.html" | relURL }}">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ "/publications/index.html" | relURL }}">Publications</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ "/projects/index.html" | relURL }}">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ "/people/index.html" | relURL }}">People</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ "/about/index.html" | relURL }}">About</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col-6">
+                            <h3 class="sr-only text-uppercase">Contact</h3>
+
+                            <ul class="list-unstyled">
+                                <li class="py-2">
+                                    <div class="d-flex flex-row">
+                                        <div class="px-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon rounded-circle bg-green" style="width:2.5rem; height:2.5rem;padding: 5px;" viewBox="0 0 20 20">
+                                                <path style="fill:#ffffff"d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="text-secondary">
+                                            <address>
+                                                Institute for the Study of International Development<br />
+                                                Peterson Hall<br />
+                                                3460 McTavish Street<br />
+                                                Montréal, Québec, 
+                                                H3A 0E6<br />
+                                            </address>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-2">
+                                    <div class="d-flex flex-row">
+                                        <div class="px-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon rounded-circle bg-green" style="width:2.5rem; height:2.5rem;padding: 5px;" viewBox="0 0 20 20">
+                                                <path style="fill:#ffffff" d="M17.218,2.268L2.477,8.388C2.13,8.535,2.164,9.05,2.542,9.134L9.33,10.67l1.535,6.787c0.083,0.377,0.602,0.415,0.745,0.065l6.123-14.74C17.866,2.46,17.539,2.134,17.218,2.268 M3.92,8.641l11.772-4.89L9.535,9.909L3.92,8.641z M11.358,16.078l-1.268-5.613l6.157-6.157L11.358,16.078z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="text-secondary">
+                                            <a href="mailto:marie-eve.yergeau@mcgill.ca">marie-eve.yergeau@mcgill.ca</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>          
+
+                    <div class="d-flex justify-content-between border-top py-4">
+                        <p class="pt-3 pb-0 small text-center">Copyright © 2018 McGill University</p>
+                        <img width="100px"  src='{{ "images/brand/gg-lab.png" | relURL }}' alt="" />
+                    </div>
+
+                </div>
+            </div>
+        </footer>

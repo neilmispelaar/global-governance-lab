@@ -112,6 +112,17 @@ textarea {
 }
 
 
+.gg-lab-page-footer { 
+
+    background-color: #ffffff;
+
+
+}
+
+.gg-lab-page-footer .nav-item .nav-link { 
+
+}
+
 
 /* ==========================================================================
    Global Governance Lab Button Styles
@@ -334,6 +345,10 @@ body.noScroll {
 .bg-green { 
     background-color: #70B243   !important;
 } 
+.bg-dark-green { 
+    background-color: #466f2a   !important;
+} 
+
 
 .text-light-blue { 
     color: #2BACE2   !important;

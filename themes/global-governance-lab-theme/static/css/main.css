@@ -119,6 +119,35 @@ textarea {
 
 }
 
+.gg-lab-page-footer .gg-lab-page-footer-nav-ul { 
+
+    
+
+}
+
+
+.gg-lab-page-footer .gg-lab-page-footer-nav-ul li {
+ 
+    padding: 10px 0px 10px 0px;
+ 
+}
+
+.gg-lab-page-footer .gg-lab-page-footer-nav-ul li a { 
+
+    text-transform: uppercase; 
+    /* font-weight: 600 !important; */
+    color: #6c757d;
+ 
+}
+
+.gg-lab-page-footer .gg-lab-page-footer-nav-ul li a:hover { 
+
+    color: #a3a9ae;
+    transition: 0.5s ease-in; 
+ 
+
+}
+
 .gg-lab-page-footer .nav-item .nav-link { 
 
 }
@@ -362,6 +391,7 @@ body.noScroll {
 .text-green { 
     color: #70B243   !important;
 }
+
 
 
 

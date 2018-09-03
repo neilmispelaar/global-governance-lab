@@ -5,30 +5,35 @@
                     
                     <h2 class="sr-only">Site Footer Information</h2>
 
-                    <div class="row justify-content-between">
+                    <div class="row justify-content-between py-4">
                         <div class="col-6">
 
-                            <ul class="nav flex-column text-left">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ "/index.html" | relURL }}">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ "/publications/index.html" | relURL }}">Publications</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ "/projects/index.html" | relURL }}">Projects</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ "/people/index.html" | relURL }}">People</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ "/about/index.html" | relURL }}">About</a>
-                                </li>
-                            </ul>
+                            <nav>
 
+                                <h3 class="sr-only">Site Navigation</h3>
+
+                                <ul class="list-unstyled gg-lab-page-footer-nav-ul">
+                                    <li>
+                                        <a href="{{ "/index.html" | relURL }}">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ "/publications/index.html" | relURL }}">Publications</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ "/projects/index.html" | relURL }}">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ "/people/index.html" | relURL }}">People</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ "/about/index.html" | relURL }}">About</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            
                         </div>
                         <div class="col-6">
-                            <h3 class="sr-only text-uppercase">Contact</h3>
+                            <h3 class="sr-only">Contact</h3>
 
                             <ul class="list-unstyled">
                                 <li class="py-2">
@@ -65,7 +70,7 @@
                         </div>
                     </div>          
 
-                    <div class="d-flex justify-content-between border-top py-4">
+                    <div class="d-flex justify-content-between border-top py-5">
                         <p class="pt-3 pb-0 small text-center">Copyright © 2018 McGill University</p>
                         <img width="100px"  src='{{ "images/brand/gg-lab.png" | relURL }}' alt="" />
                     </div>

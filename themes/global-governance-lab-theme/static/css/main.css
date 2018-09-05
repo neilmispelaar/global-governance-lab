@@ -86,14 +86,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.gglab-default { 
+.gg-lab-default { 
     color: rgb(108, 117, 125);
     font-size: 120%;
     padding: 0px 0px 100px 0px;
     background-color: #f8f9fa !important;
 }
 
-.gglab-default h1 { 
+.gg-lab-default h1 { 
     color: rgb(108, 117, 125);
     font-size: 3rem !important;    
     border-bottom: 1px solid rgb(108, 117, 125);

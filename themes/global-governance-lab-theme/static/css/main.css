@@ -157,6 +157,29 @@ textarea {
     }
 }
 
+/* ==========================================================================
+   Global Governance Lab Home Page Styles
+   ========================================================================== */
+
+.gg-lab-home-project-feature { 
+    position: relative;
+    width: 100%;
+}
+
+.gg-lab-home-project-feature .gg-lab-home-project-feature-img { 
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.gg-lab-home-project-feature .gg-lab-home-project-feature-text { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;   
+}
+
 
 /* ==========================================================================
    Global Governance Lab Button Styles

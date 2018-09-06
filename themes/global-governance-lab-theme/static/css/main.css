@@ -437,7 +437,9 @@ body.noScroll {
 .text-green { 
     color: #70B243   !important;
 }
-
+.text-dark-gray { 
+    color: #666666;
+}
 
 
 

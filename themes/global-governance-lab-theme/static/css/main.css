@@ -85,8 +85,53 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { 
+    font-weight: 700 !important;
+} 
 
-.gg-lab-default { 
+
+
+/* ==========================================================================
+   Global Governance Lab Page Footer Styles
+   ========================================================================== */
+
+.gg-lab-page-footer { 
+    background-color: #ffffff;
+}
+
+.gg-lab-page-footer .gg-lab-page-footer-nav-ul { 
+
+}
+
+
+.gg-lab-page-footer .gg-lab-page-footer-nav-ul li { 
+    padding: 10px 0px 10px 0px;
+}
+
+.gg-lab-page-footer .gg-lab-page-footer-nav-ul li a { 
+    text-transform: uppercase; 
+    /* font-weight: 600 !important; */
+    color: #6c757d;
+}
+
+.gg-lab-page-footer .gg-lab-page-footer-nav-ul li a:hover { 
+    color: #a3a9ae;
+    transition: 0.5s ease-in;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .gg-lab-page-footer .gg-lab-page-footer-nav-ul { 
+        border-bottom: 1px solid rgb(222, 226, 230);
+    }
+}
+
+
+/* ==========================================================================
+   Global Governance Lab Default Page Styles
+   ========================================================================== */
+
+   .gg-lab-default { 
     color: rgb(108, 117, 125);
     font-size: 120%;
     padding: 0px 0px 100px 0px;
@@ -112,50 +157,6 @@ textarea {
 }
 
 
-.gg-lab-page-footer { 
-
-    background-color: #ffffff;
-
-
-}
-
-.gg-lab-page-footer .gg-lab-page-footer-nav-ul { 
-
-    
-
-}
-
-
-.gg-lab-page-footer .gg-lab-page-footer-nav-ul li {
- 
-    padding: 10px 0px 10px 0px;
- 
-}
-
-.gg-lab-page-footer .gg-lab-page-footer-nav-ul li a { 
-
-    text-transform: uppercase; 
-    /* font-weight: 600 !important; */
-    color: #6c757d;
- 
-}
-
-.gg-lab-page-footer .gg-lab-page-footer-nav-ul li a:hover { 
-
-    color: #a3a9ae;
-    transition: 0.5s ease-in; 
- 
-
-}
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
-    .gg-lab-page-footer .gg-lab-page-footer-nav-ul { 
-
-        border-bottom: 1px solid rgb(222, 226, 230);
-
-    }
-}
 
 /* ==========================================================================
    Global Governance Lab Home Page Styles
@@ -445,19 +446,19 @@ body.noScroll {
 
 .display-1 {
     font-size: 2.5rem !important;
-    font-weight: 300 !important;
+    font-weight: 700 !important;
 }
 .display-2 {
     font-size: 3.0rem !important;
-    font-weight: 300 !important;
+    font-weight: 700 !important;
 }
 .display-3 {
     font-size: 2.5rem !important;
-    font-weight: 300 !important;
+    font-weight: 700 !important;
 }
 .display-4 {
     font-size: 2.0rem !important;
-    font-weight: 300 !important;
+    font-weight: 700 !important;
 }
   
   
@@ -465,19 +466,19 @@ body.noScroll {
     /* This is what you see on desktop */ 
     .display-1 {
         font-size: 5rem !important;
-        font-weight: 300 !important;
+        font-weight: 600 !important;
     }
     .display-2 {
-        font-size: 4.0rem !important;
-        font-weight: 300 !important;
+        font-size: 4.5rem !important;
+        font-weight: 600 !important;
     }
     .display-3 {
-        font-size: 3.5rem !important;
-        font-weight: 300 !important;
+        font-size: 4.0rem !important;
+        font-weight: 600 !important;
     }
     .display-4 {
-        font-size: 3.0rem !important;
-        font-weight: 300 !important;
+        font-size: 3.5rem !important;
+        font-weight: 600 !important;
     }
 
 }

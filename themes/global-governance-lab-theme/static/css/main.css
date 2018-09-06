@@ -96,12 +96,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .gg-lab-card-proj { 
     background-color: white; 
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .gg-lab-card-proj .gg-lab-card-proj-body { 
     padding: 50px;
 
+}
+
+
+.gg-lab-card-proj .gg-lab-card-proj-img-top { 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .gg-lab-card-proj .gg-lab-card-proj-body .gg-lab-card-proj-title h2,

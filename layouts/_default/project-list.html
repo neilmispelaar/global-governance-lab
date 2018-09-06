@@ -19,7 +19,7 @@
 
                                 <div class="col-sm-6 col-md-6 col-lg-4 mb-3 mb-sm-4">
                                     <div class="gg-lab-card-proj h-100 d-flex flex-column">
-                                        <img src="{{ "/images/projects/project-01.jpg" | relURL }}" alt="" class="gg-lab-card-proj-img-top img-fluid" />
+                                        <img src="{{ .Params.project.image | relURL }}" alt="" class="gg-lab-card-proj-img-top img-fluid" />
                                         <div class="gg-lab-card-proj-body">
                                             <div class="gg-lab-card-proj-title">
                                                 <h3>{{ .Params.project.title }}</h3>
@@ -38,6 +38,7 @@
                                     </div>
                                 </div>
 
+                                <!--
                                 <div class="col-4 my-3">
                                     <div class="card h-100">
                                         <img class="card-img-top" src="https://via.placeholder.com/350x150" alt="Card image cap">
@@ -47,7 +48,7 @@
                                             <a href="{{.Permalink | relURL }}" class="btn btn-green">Learn more</a>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                                 {{ end }}
                             </div>
                         

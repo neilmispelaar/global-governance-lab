@@ -350,6 +350,11 @@ body.noScroll {
         transition-timing-function: linear;
     }
     
+    .gglab-nav-navbar-container ul li a.active { 
+        text-decoration: underline;
+        color: rgba(240, 240, 240, 1) !important;
+    }
+
     .gglab-nav-navbar-container.open ul li { 
         transform: translate(0,0);
         opacity: 1;

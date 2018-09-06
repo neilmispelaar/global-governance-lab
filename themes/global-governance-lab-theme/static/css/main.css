@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .gg-lab-card-proj .gg-lab-card-proj-body { 
-    padding: 50px;
+    padding: 15px 20px 10px 20px;
 
 }
 
@@ -114,10 +114,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .gg-lab-card-proj .gg-lab-card-proj-body .gg-lab-card-proj-title h3,
 .gg-lab-card-proj .gg-lab-card-proj-body .gg-lab-card-proj-title h4,
 .gg-lab-card-proj .gg-lab-card-proj-body .gg-lab-card-proj-title h5 { 
-    font-size: 1.1rem !important;
-    font-weight: 400 !important;
+    font-size: 1.0rem !important;
+    font-weight: 600 !important;
     padding: 0;
-    color: rgba(23, 73, 124, 1);
+}
+
+.gg-lab-card-proj .gg-lab-card-proj-footer { 
+    padding: 0px 20px 10px 20px;
 }
 
 /* ==========================================================================

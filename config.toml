@@ -15,4 +15,11 @@ theme = "global-governance-lab-theme"
 # SITE SETTINGS 
 title = "Global Governance Lab"
 languageCode = "en-ca"
+sectionPagesMenu = "main"
 
+[menu]
+    [[menu.main]]
+        name = "Home"
+        identifier = "home"
+        url = "/"
+        weight = 1

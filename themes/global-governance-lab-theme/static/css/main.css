@@ -249,12 +249,20 @@ body.noScroll {
     display: none;
 }
 
+.gglab-nav-navbar-container ul li a { 
+    font-weight: 600 !important; 
+}
+
+.gglab-nav-navbar-container ul li a.active { 
+    color: rgba(0,0,0,.7) !important;
+}
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
 
     .gglab-nav-navbar-brand-container { 
         text-align: center;
+        display: block;
     }
     
     .gglab-nav-navbar-container { 
@@ -336,7 +344,7 @@ body.noScroll {
     }
 
     .gglab-nav-navbar-container ul li a:hover { 
-        color: rgba(200, 200, 200, 1) !important;
+        color: yellow !important;
         transform: scale(1.1);
         transition-duration: 0.2s;
         transition-timing-function: linear;

@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
    Global Governance Lab Default Page Styles
    ========================================================================== */
 
-   .gg-lab-default { 
+.gg-lab-default { 
     color: rgb(108, 117, 125);
     font-size: 120%;
     padding: 0px 0px 100px 0px;
@@ -171,10 +171,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .gg-lab-default h1 { 
-    color: rgb(108, 117, 125);
-    font-size: 3rem !important;    
-    border-bottom: 1px solid rgb(108, 117, 125);
-    padding: 25px 0px 25px 0px;
+    color: #ffffff;
+    margin-top: 0px;
+    font-size: 3rem !important;
+    padding: 80px 0px 0px 0px;
     font-weight: 500;
     
 }

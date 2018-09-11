@@ -8,21 +8,12 @@
                             <nav>
                                 <h3 class="sr-only">Site navigation</h3>
                                 <ul class="list-unstyled gg-lab-page-footer-nav-ul text-center text-md-left pb-md-0 pb-4">
+                                    {{ $currentPage := . }}
+                                    
+                                    {{ range .Site.Menus.main }}
                                     <li>
-                                        <a href="{{ "/index.html" | relURL }}">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ "/publications/index.html" | relURL }}">Publications</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ "/projects/index.html" | relURL }}">Projects</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ "/people/index.html" | relURL }}">People</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ "/about/index.html" | relURL }}">About</a>
-                                    </li>
+                                        <a {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}class="active"{{end}} href="{{.URL}}">{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}<span class="sr-only">Selected: </span>{{end}}{{ .Name }}</a></li>
+                                    {{ end }}
                                 </ul>
                             </nav>
                         </div>

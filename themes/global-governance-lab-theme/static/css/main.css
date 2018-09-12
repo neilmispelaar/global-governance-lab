@@ -128,7 +128,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
    ========================================================================== */
 
 .gg-lab-page-footer { 
-    background-color: #ffffff;
+    border-top: 1px solid rgb(222, 226, 230);
+    color: #ffffff;
+}
+
+.gg-lab-page-footer a { 
+    color: #ffffff;
 }
 
 .gg-lab-page-footer .gg-lab-page-footer-nav-ul { 
@@ -143,7 +148,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .gg-lab-page-footer .gg-lab-page-footer-nav-ul li a { 
     text-transform: uppercase; 
     /* font-weight: 600 !important; */
-    color: #6c757d;
+    color: #ffffff;
 }
 
 .gg-lab-page-footer .gg-lab-page-footer-nav-ul li a:hover { 

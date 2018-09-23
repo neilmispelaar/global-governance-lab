@@ -89,6 +89,47 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 700 !important;
 } 
 
+/* ==========================================================================
+   Global Governance Lab Project Publication Card Styles 
+   ========================================================================== */
+.pubcard { 
+    background-color: #ffffff;
+    margin: 20px 0px 20px 0px;
+}
+
+.pubcard.mediacoverage { 
+    border-left: 10px solid #D8E3F2;
+    background-color: #f2f6fb;
+}
+
+.pubcard.booksbookchapters { 
+    border-left: 10px solid #466f2a;
+    background-color: #e8ede4;
+}
+
+.pubcard.journalarticles { 
+    border-left: 10px solid #FCB216;
+    background-color: #fff5e2;
+}
+
+.pubcard.policybriefs { 
+    border-left: 10px solid #2BACE2;
+    background-color: #e4f5fb;
+}
+
+.pubcard-body { 
+    padding: 20px;
+}
+
+.pubcard-title { 
+    font-size: 1.0em;
+}
+
+.pubcard.mediacoverage .pubcard-title { 
+    color: #3A6EB6;
+}
+
+
 
 /* ==========================================================================
    Global Governance Lab Project Card Styles 

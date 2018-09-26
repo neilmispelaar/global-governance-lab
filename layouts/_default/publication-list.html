@@ -46,14 +46,24 @@
                                 {{ range (sort $.Site.Data.publications.booksbookchapters.entries "year" "desc") }}
                                 <li>
                                     <div class="pubcard booksbookchapters">
-                                        <div class="pubcard-body">
-                                            <h2 class="pubcard-title pubtitle">{{ .title }}</h2>
-                                            <p class="pubcard-type pubtype">Books and Book Chapters</p>
-                                            <p class="pubcard-topic pubtopic">{{ .topic }}</p>
-                                            <p class="pubcard-source pubsource">{{ .source }}</p>
-                                            <p class="pubcard-year pubyear">{{ .year }}</p>
-                                            <p class="pubcard-href"><a href="{{ .href }}" class="card-link">Access</a></p>
-                                        </div>
+                                        <section>
+                                            <div class="pubcard-body">
+                                                <h2 class="pubcard-title pubtitle border-bottom">{{ .title }}</h2>
+                                                <p class="pubcard-type pubtype"></p>
+                                                <!-- <p class="pubcard-topic "><span class="badge badge-dark pubtopic">{{ .topic }}</span></p>-->
+                                                <p class="pubcard-source">{{ .authors }}</p>
+                                                <p class="pubcard-source pubsource">{{ .source }}, {{ .year }}</p>
+                                                
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                            <span class="badge badge-dark pubtopic" style="background-color: #466f2a;">{{ .topic }}</span> 
+                                                            <span class="badge badge-dark pubtype" style="background-color: #466f2a;">Books and Book Chapters</span>
+                                                        </div>
+                                                        <p class="sr-only pubcard-href"><a href="{{ .href }}" class="btn btn-primary" >Access</a></p>
+                                                </div>
+                                                
+                                            </div>
+                                        </section>
                                     </div>
                                 </li>
                                 {{ end }}

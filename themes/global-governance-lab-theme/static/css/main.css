@@ -97,12 +97,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin: 20px 0px 20px 0px;
 }
 
-.pubcard.mediacoverage { 
+.pubcard.mr { 
     border-left: 10px solid #D8E3F2;
     background-color: #f2f6fb;
 }
 
-.pubcard.booksbookchapters { 
+.pubcard.governance { 
     border-left: 10px solid #466f2a;
     background-color: #e8ede4;
 }
@@ -118,11 +118,41 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .pubcard-body { 
+    padding: 0px 20px 0px 10px;
+}
+
+.pubcard-body { 
+    display: flex;
+    flex-direction: column;
+
     padding: 20px;
 }
 
 .pubcard-title { 
     font-size: 1.0em;
+}
+
+.pubcard-type { 
+    font-size: 1.0em;
+    margin: 0;
+    padding: 0;
+}
+
+.pubcard-topic {
+    font-size: 1.0em;
+    margin: 0;
+    padding: 0;
+}
+
+.pubcard-source { 
+    font-size: 1.0em;
+    margin: 0; 
+    padding: 0;
+}
+
+.pubcard-year { 
+    font-size: 1.0em;
+    margin: 0;
 }
 
 .pubcard.mediacoverage .pubcard-title { 

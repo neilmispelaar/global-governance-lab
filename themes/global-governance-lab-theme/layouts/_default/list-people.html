@@ -20,11 +20,40 @@
                 <div class="row justify-content-center pt-5">
                     <div class="col-10 col-sm-10">
 
-                        <p>The Global Governance Research-to-Practice Lab is a team of interdisciplinary researchers working on projects related to global issues.</p>
+                        <p class="font-size-r1-6 pb-4">The Global Governance Research-to-Practice Lab is a team of interdisciplinary researchers working on projects related to global issues.</p>
 
-                        <ul class="row list-unstyled">
-                        {{ range .Pages }}
-                            <li class="col-sm-6 col-md-6 col-lg-4 mb-3 mb-sm-4">
+                        <section>
+                            <h2 class="text-dark-blue pb-3">Faculty</h2>
+                            
+                            <ul class="row list-unstyled">
+                                {{ range where .Pages "Params.person.category" "faculty" }}
+                                    <li class="col-sm-6 col-md-6 col-lg-4 mb-3 mb-sm-4">
+                                        <div class="gg-lab-card-proj p-3 h-100 d-flex flex-column">
+                                            <img src="{{.Params.Person.ImgSrc | relURL }}" alt="" class="img-fluid" style="object-fit: contain" />
+                                            <div class="gg-lab-card-proj-body" style="padding:0px;">
+                                                <div class="gg-lab-card-proj-title">
+                                                    <h3>{{ .Params.Person.FirstName }} {{ .Params.Person.LastName }}</h3>
+                                                    <p>{{ .Params.Person.Title }}</p>
+                                                </div>
+                                            </div>
+                                            <div class="gg-lab-card-proj-footer mt-auto">
+                                                <p>
+                                                    <a href="{{.Permalink | relURL }}" class="btn btn-green"> 
+                                                        Learn more <span class="sr-only">TODO</span>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                {{ end }}
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h2 class="text-dark-blue pb-3">Professors of Practice</h2>
+                            <ul class="row list-unstyled">
+                                {{ range where .Pages "Params.person.category" "practice" }}
+                                    <li class="col-sm-6 col-md-6 col-lg-4 mb-3 mb-sm-4">
                                         <div class="gg-lab-card-proj h-100 d-flex flex-column">
                                             <img src="{{.Params.Person.ImgSrc | relURL }}" alt="" class="gg-lab-card-proj-img-top img-fluid" />
                                             <div class="gg-lab-card-proj-body">
@@ -41,11 +70,62 @@
                                                 </p>
                                             </div>
                                         </div>
-                                
-                            
-                            </li>
-                        {{ end }}
-                        </ul>
+                                    </li>
+                                {{ end }}
+                            </ul>
+                        </section>
+    
+                        <section>
+                            <h2 class="text-dark-blue pb-3">Alumni</h2>
+                            <ul class="row list-unstyled">
+                                {{ range where .Pages "Params.person.category" "alumni" }}
+                                    <li class="col-sm-6 col-md-6 col-lg-4 mb-3 mb-sm-4">
+                                        <div class="gg-lab-card-proj h-100 d-flex flex-column">
+                                            <img src="{{.Params.Person.ImgSrc | relURL }}" alt="" class="gg-lab-card-proj-img-top img-fluid" />
+                                            <div class="gg-lab-card-proj-body">
+                                                <div class="gg-lab-card-proj-title">
+                                                    <h3>{{ .Params.Person.FirstName }} {{ .Params.Person.LastName }}</h3>
+                                                    <p>{{ .Params.Person.Title }}</p>
+                                                </div>
+                                            </div>
+                                            <div class="gg-lab-card-proj-footer mt-auto">
+                                                <p>
+                                                    <a href="{{.Permalink | relURL }}" class="btn btn-green"> 
+                                                        Learn more <span class="sr-only">TODO</span>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                {{ end }}
+                            </ul>
+                        </section>
+    
+                        <section>
+                            <h2 class="text-dark-blue pb-3">Research Associate</h2>
+                            <ul class="row list-unstyled">
+                                {{ range where .Pages "Params.person.category" "research" }}
+                                    <li class="col-sm-6 col-md-6 col-lg-4 mb-3 mb-sm-4">
+                                        <div class="gg-lab-card-proj h-100 d-flex flex-column">
+                                            <img src="{{.Params.Person.ImgSrc | relURL }}" alt="" class="gg-lab-card-proj-img-top img-fluid" />
+                                            <div class="gg-lab-card-proj-body">
+                                                <div class="gg-lab-card-proj-title">
+                                                    <h3>{{ .Params.Person.FirstName }} {{ .Params.Person.LastName }}</h3>
+                                                    <p>{{ .Params.Person.Title }}</p>
+                                                </div>
+                                            </div>
+                                            <div class="gg-lab-card-proj-footer mt-auto">
+                                                <p>
+                                                    <a href="{{.Permalink | relURL }}" class="btn btn-green"> 
+                                                        Learn more <span class="sr-only">TODO</span>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                {{ end }}
+                            </ul>
+                        </section>
 
                     </div>
                 </div>

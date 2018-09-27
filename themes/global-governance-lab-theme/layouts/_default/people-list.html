@@ -24,9 +24,9 @@
 
                         <ul class="row list-unstyled">
                         {{ range .Pages }}
-                            <li class="col-md-6 col-lg-4 mb-3 mb-sm-4">
+                            <li class="col-sm-6 col-md-6 col-lg-4 mb-3 mb-sm-4">
                                         <div class="gg-lab-card-proj h-100 d-flex flex-column">
-                                            <img src="https://placeimg.com/640/480/people" alt="" class="gg-lab-card-proj-img-top img-fluid" />
+                                            <img src="{{.Params.Person.ImgSrc | relURL }}" alt="" class="gg-lab-card-proj-img-top img-fluid" />
                                             <div class="gg-lab-card-proj-body">
                                                 <div class="gg-lab-card-proj-title">
                                                     <h3>{{ .Params.Person.FirstName }} {{ .Params.Person.LastName }}</h3>

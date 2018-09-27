@@ -22,10 +22,27 @@
 
                         <p>The Global Governance Research-to-Practice Lab is a team of interdisciplinary researchers working on projects related to global issues.</p>
 
-                        <ul>
+                        <ul class="row list-unstyled">
                         {{ range .Pages }}
-                            <li>
-                                <p>{{ .Params.Person.FirstName }}</p>
+                            <li class="col-md-6 col-lg-4 mb-3 mb-sm-4">
+                                        <div class="gg-lab-card-proj h-100 d-flex flex-column">
+                                            <img src="https://placeimg.com/640/480/people" alt="" class="gg-lab-card-proj-img-top img-fluid" />
+                                            <div class="gg-lab-card-proj-body">
+                                                <div class="gg-lab-card-proj-title">
+                                                    <h3>{{ .Params.Person.FirstName }} {{ .Params.Person.LastName }}</h3>
+                                                    <p>{{ .Params.Person.Title }}</p>
+                                                </div>
+                                            </div>
+                                            <div class="gg-lab-card-proj-footer mt-auto">
+                                                <p>
+                                                    <a href="{{.Permalink | relURL }}" class="btn btn-green"> 
+                                                        Learn more <span class="sr-only">TODO</span>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                
+                            
                             </li>
                         {{ end }}
                         </ul>

@@ -97,17 +97,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin: 20px 0px 20px 0px;
 }
 
-.pubcard.mr { 
-    border-left: 10px solid #D8E3F2;
-    background-color: #f2f6fb;
+.pubcard.governance { 
+    border-left: 10px solid #2BACE2;
+    background-color: #e4f5fb;
 }
 
-.pubcard.governance { 
+.pubcard.resources { 
     border-left: 10px solid #466f2a;
     background-color: #e8ede4;
 }
 
-.pubcard.journalarticles { 
+.pubcard.migration { 
     border-left: 10px solid #FCB216;
     background-color: #fff5e2;
 }
@@ -115,6 +115,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .pubcard.policybriefs { 
     border-left: 10px solid #2BACE2;
     background-color: #e4f5fb;
+}
+
+.pubcard .pubcard-body a { 
+    text-decoration: none;
+    color: #666666;
+    display: block;
+}
+
+.pubcard .pubcard-body a:hover .pubcard-title { 
+    text-decoration: underline;
 }
 
 .pubcard-body { 
@@ -158,6 +168,24 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .pubcard.mediacoverage .pubcard-title { 
     color: #3A6EB6;
 }
+
+.pubcard.resources .pubcard-title { 
+    color: #466f2a;
+}
+
+.pubcard.governance .pubcard-title { 
+    color: #2BACE2;
+}
+
+.pubcard.migration .pubcard-title { 
+    color: #FCB216;
+}
+
+.pagination li {
+  display:inline-block;
+  padding:5px;
+}
+
 
 
 

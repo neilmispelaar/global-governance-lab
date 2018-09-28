@@ -45,23 +45,26 @@
                                 
                                 {{ range (sort $.Site.Data.publications.booksbookchapters.entries "year" "desc") }}
                                 <li>
-                                    <div class="pubcard booksbookchapters">
+                                    <div class="pubcard booksbookchapters 
+                                    {{ if eq .topic "Governance" }}
+                                        governance 
+                                    {{ end }}
+                                    {{ if eq .topic "Natural resource conflicts and trade-offs" }}
+                                        resources 
+                                    {{ end }}
+                                    {{ if eq .topic "Migration and Refugees" }}
+                                        migration 
+                                    {{ end }}
+                                    " >
                                         <section>
                                             <div class="pubcard-body">
-                                                <h2 class="pubcard-title pubtitle border-bottom">{{ .title }}</h2>
-                                                <p class="pubcard-type pubtype"></p>
-                                                <!-- <p class="pubcard-topic "><span class="badge badge-dark pubtopic">{{ .topic }}</span></p>-->
-                                                <p class="pubcard-source">{{ .authors }}</p>
-                                                <p class="pubcard-source pubsource">{{ .source }}, {{ .year }}</p>
-                                                
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                            <span class="badge badge-dark pubtopic" style="background-color: #466f2a;">{{ .topic }}</span> 
-                                                            <span class="badge badge-dark pubtype" style="background-color: #466f2a;">Books and Book Chapters</span>
-                                                        </div>
-                                                        <p class="sr-only pubcard-href"><a href="{{ .href }}" class="btn btn-primary" >Access</a></p>
-                                                </div>
-                                                
+                                                <a href="{{ .href }}">
+                                                    <h2 class="pubcard-title pubtitle">{{ .title }}</h2>
+                                                    <p class="pubcard-type pubauthor">{{ .authors }}</p>
+                                                    <p class="pubcard-type pubtype sr-only">Books and Book Chapters</p>
+                                                    <p class="pubcard-source pubsource">{{ .source }}, <span class="pubyear">{{ .year }}</span></p>
+                                                    <p class="pubcard-topic"><span class="small pubtopic">{{ .topic }}</span></p>
+                                                </a>
                                             </div>
                                         </section>
                                     </div>
@@ -70,16 +73,26 @@
 
                                 {{ range (sort $.Site.Data.publications.mediacoverage.entries "year" "desc") }}
                                 <li>
-                                    <div class="pubcard mediacoverage" style="border-left: 10px solid #D8E3F2">
+                                    <div class="pubcard mediacoverage
+                                    {{ if eq .topic "Governance" }}
+                                        governance 
+                                    {{ end }}
+                                    {{ if eq .topic "Natural resource conflicts and trade-offs" }}
+                                        resources 
+                                    {{ end }}
+                                    {{ if eq .topic "Migration and Refugees" }}
+                                        migration 
+                                    {{ end }}
+                                    " >
                                         <div class="pubcard-body">
-                                            
+                                            <a href="{{ .href }}">
                                                 <h2 class="pubcard-title pubtitle">{{ .title }}</h2>
                                                 <p class="pubcard-type pubauthor">{{ .authors }}</p>
                                                 <p class="pubcard-type pubtype sr-only">Media Coverage</p>
                                                 
                                                 <p class="pubcard-source pubsource">{{ .source }}, <span class="pubyear">{{ .year }}</span></p>
-                                                <p class="pubcard-topic pubtopic"><span class="small">{{ .topic }}</span></p>
-                                            
+                                                <p class="pubcard-topic "><span class="small pubtopic">{{ .topic }}</span></p>
+                                            </a>
                                         </div>
                                     </div>
                                 </li>
@@ -87,35 +100,58 @@
 
                                 {{ range (sort $.Site.Data.publications.journalarticles.entries "year" "desc") }}
                                 <li>
-                                    <div class="pubcard journalarticles">
+                                    <div class="pubcard journalarticles
+                                    {{ if eq .topic "Governance" }}
+                                        governance 
+                                    {{ end }}
+                                    {{ if eq .topic "Natural resource conflicts and trade-offs" }}
+                                        resources 
+                                    {{ end }}
+                                    {{ if eq .topic "Migration and Refugees" }}
+                                        migration 
+                                    {{ end }}
+                                    " >
                                         <div class="pubcard-body">
+                                            <a href="{{ .href }}">
                                             <h2 class="pubcard-title pubtitle">{{ .title }}</h2>
-                                            <p class="pubcard-type pubtype">Journal Article</p>
-                                            <p class="pubcard-topic pubtopic">{{ .topic }}</p>
-                                            <p class="pubcard-source pubsource">{{ .source }}</p>
-                                            <p class="pubcard-year pubyear">{{ .year }}</p>
-                                            <p class="pubcard-href"><a href="{{ .href }}" class="card-link">Access</a></p>
+                                            <p class="pubcard-type pubauthor">{{ .authors }}</p>
+                                            <p class="pubcard-type pubtype sr-only">Journal Article</p>
+                                            <p class="pubcard-source pubsource">{{ .source }}, <span class="pubyear">{{ .year }}</span></p>
+                                            <p class="pubcard-topic "><span class="small pubtopic">{{ .topic }}</span></p>
+                                            </a>
                                         </div>
                                     </div>
                                 </li>
                                 {{ end }}
                                 {{ range (sort $.Site.Data.publications.policybriefs.entries "year" "desc") }}
                                 <li>
-                                    <div class="pubcard journalarticles">
+                                    <div class="pubcard
+                                    {{ if eq .topic "Governance" }}
+                                        governance 
+                                    {{ end }}
+                                    {{ if eq .topic "Natural resource conflicts and trade-offs" }}
+                                        resources 
+                                    {{ end }}
+                                    {{ if eq .topic "Migration and Refugees" }}
+                                        migration 
+                                    {{ end }}">
                                         <div class="pubcard-body">
+                                            <a href="{{ .href }}">
                                             <h2 class="pubcard-title pubtitle">{{ .title }}</h2>
-                                            <p class="pubcard-type pubtype">Policy Brief</p>
-                                            <p class="pubcard-topic pubtopic">{{ .topic }}</p>
-                                            <p class="pubcard-source pubsource">{{ .source }}</p>
-                                            <p class="pubcard-year pubyear">{{ .year }}</p>
-                                            <p class="pubcard-href"><a href="{{ .href }}" class="card-link">Access</a></p>
+                                            <p class="pubcard-type pubauthor">{{ .authors }}</p>
+                                            <p class="pubcard-type pubtype sr-only">Policy Brief</p>
+                                            <p class="pubcard-source pubsource">{{ .source }}, <span class="pubyear">{{ .year }}</span></p>
+                                            <p class="pubcard-topic pubtopic"><span class="small">{{ .topic }}</span></p>
+                                            </a>
                                         </div>
                                     </div>
                                 </li>
                                 {{ end }}
 
                             </ul>
-                            <ul class="pagination"></ul>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination"></ul>
+                            </nav>
                             </div>
                         <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
                     </div>

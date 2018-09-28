@@ -23,7 +23,7 @@
                         <h2>{{ .Params.Person.FirstName }} {{ .Params.Person.LastName }}</h2>
                         <p class="lead">{{ .Params.Person.Title }}</p>
       
-                        <img src="{{.Params.Person.ImgSrc | relURL }}" alt="" class="float-right" style="border: 15px solid #dee3e8;" />
+                        <img src="{{.Params.Person.ImgSrc | relURL }}" alt="" class="float-right col-md-3 mb-3 ml-3" style="border: 15px solid #dee3e8; padding:0px;" />
 
                         {{ .Content }}
                         

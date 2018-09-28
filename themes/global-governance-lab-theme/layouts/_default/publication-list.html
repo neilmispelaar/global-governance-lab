@@ -70,14 +70,16 @@
 
                                 {{ range (sort $.Site.Data.publications.mediacoverage.entries "year" "desc") }}
                                 <li>
-                                    <div class="pubcard mediacoverage">
+                                    <div class="pubcard mediacoverage" style="border-left: 10px solid #D8E3F2">
                                         <div class="pubcard-body">
-                                            <h2 class="pubcard-title pubtitle">{{ .title }}</h2>
-                                            <p class="pubcard-type pubtype">Media Coverage</p>
-                                            <p class="pubcard-topic pubtopic">{{ .topic }}</p>
-                                            <p class="pubcard-source pubsource">{{ .source }}</p>
-                                            <p class="pubcard-year pubyear">{{ .year }}</p>
-                                            <p class="pubcard-href"><a href="{{ .href }}" class="card-link">Access</a></p>
+                                            
+                                                <h2 class="pubcard-title pubtitle">{{ .title }}</h2>
+                                                <p class="pubcard-type pubauthor">{{ .authors }}</p>
+                                                <p class="pubcard-type pubtype sr-only">Media Coverage</p>
+                                                
+                                                <p class="pubcard-source pubsource">{{ .source }}, <span class="pubyear">{{ .year }}</span></p>
+                                                <p class="pubcard-topic pubtopic"><span class="small">{{ .topic }}</span></p>
+                                            
                                         </div>
                                     </div>
                                 </li>

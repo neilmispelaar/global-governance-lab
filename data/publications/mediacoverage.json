@@ -44,55 +44,63 @@
             "title": "Canada Falling Short Amid Global Refugee Crisis",
             "authors": "Megan Bradley",
             "source": "Toronto Star",
+            "topic": "Migration and Refugees",
             "year": "2015",
             "href": "https://www.thestar.com/opinion/commentary/2015/06/20/canada-falling-short-amid-global-refugee-crisis.html"
         },
         {
             "title": "Q&A: Pressure Builds on Libya’s Displaced",
 			"authors": "Megan Bradley",
-			"source": "Al-Jazeera",
+            "source": "Al-Jazeera",
+            "topic": "Migration and Refugees",
 			"year": "2015",
 			"href": "https://www.aljazeera.com/news/2015/04/qa-pressure-builds-libya-displaced-150419122318326.html"	
         },
         {
             "title": "Camps Are Not the Answer to Syria’s Displacement Crisis",
 			"authors": "Megan Bradley",
-			"source": "The Atlantic",
+            "source": "The Atlantic",
+            "topic": "Migration and Refugees",
 			"year": "2013",
 			"href": "https://www.theatlantic.com/international/archive/2013/04/syrians-dont-belong-in-camps/275110/"
         },
         {
             "title": "For Regional Stability, Help Syria’s Internally Displaced",
 			"authors": "Megan Bradley",
-			"source": "The Christian Science Monitor",
+            "source": "The Christian Science Monitor",
+            "topic": "Migration and Refugees",
 			"year": "2013",
 			"href": "https://www.csmonitor.com/Commentary/Opinion/2013/0612/For-regional-stability-help-Syria-s-internally-displaced"
         },
         {
             "title": "Humanitarian Crisis Spilling from Syria",
 			"authors": "Megan Bradley",
-			"source": "CNN",
+            "source": "CNN",
+            "topic": "Migration and Refugees",
 			"year": "2013",
 			"href": "https://www.cnn.com/2013/09/11/opinion/bradely-syria-refugees/"
         },
         {
             "title": "Rethinking Return: Defining Success in Refugee Repatriation",
 			"authors": "Megan Bradley",
-			"source": "World Politics Review",
+            "source": "World Politics Review",
+            "topic": "Migration and Refugees",
 			"year": "2013",
 			"href": " https://www.worldpoliticsreview.com/articles/13418/rethinking-return-defining-success-in-refugee-repatriation"
         },
         {
             "title": "Strengthened Protection for Internally Displaced Persons in Africa: The Kampala Convention Comes into Force",
 			"authors": "Asplet, M. and M. Bradley",
-			"source": "American Society of International Law Insights",
+            "source": "American Society of International Law Insights",
+            "topic": "Migration and Refugees",
 			"year": "2012",
 			"href": "https://meganbradleyca.files.wordpress.com/2017/11/asplet-and-bradley-kampala-convention-asil-insight.pdf"
         },
         {
             "title": "Bracing for Sandy: Cutting the Cost of Disaster",
 			"authors": "Megan Bradley",
-			"source": "Brookings ",
+            "source": "Brookings ",
+            "topic": "Migration and Refugees",
 			"year": "2012",
 			"href": "https://www.brookings.edu/opinions/bracing-for-sandy-cutting-the-cost-of-disaster/"
         }

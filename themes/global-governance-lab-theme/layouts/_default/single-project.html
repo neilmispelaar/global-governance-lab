@@ -22,9 +22,11 @@
                         
                         <h2>{{ .Params.Project.Title }}</h2>
 
+                        <p class="lead">{{ .Params.Project.Author }}</p>
+
                         <img class="img-fluid pt-4 pb-1" src="{{ .Params.Project.Image }}" alt="" />
 
-                        <p><small>{{ .Params.Project.Author }}</small></p>
+                        
 
                         {{ .Content }}
                         

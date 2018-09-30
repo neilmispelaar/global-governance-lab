@@ -23,8 +23,10 @@
                         <section>
                             <h2 class="mb-4">Ongoing Projects</h2>
 
+                            <!-- Need to sort items by project title alphabettically -->
+
                             <div class="row">
-                                {{ range where .Pages "Params.project.status" "open" }}
+                                {{ range ((where .Pages "Params.project.status" "open") sort .Pages "Params.project.title" "desc" )  }}
                                 <div class="col-sm-6 col-md-6 col-lg-4 mb-3 mb-sm-4">
                                     <div class="gg-lab-card-proj h-100 d-flex flex-column">
                                         <img src="{{ .Params.project.image | relURL }}" alt="" class="gg-lab-card-proj-img-top img-fluid" />

@@ -25,8 +25,10 @@
                         <section>
                             <h2 class="text-dark-blue pb-3">Faculty</h2>
                             
+                            <!-- Sort people alphabetically by last name -->
+
                             <ul class="row list-unstyled">
-                                {{ range where .Pages "Params.person.category" "faculty" }}
+                                {{ range ((where .Pages "Params.person.category" "faculty") sort .Pages "Params.person.LastName" "desc") }}
                                     <li class="col-sm-6 col-md-6 col-lg-4 mb-3 mb-sm-4">
                                         <div class="gg-lab-card-proj p-3 h-100 d-flex flex-column">
                                             <img src="{{.Params.Person.ImgSrc | relURL }}" alt="" class="img-fluid" />

@@ -25,7 +25,9 @@
                         <section>
                             <h2 class="mb-4">Ongoing Projects</h2>
 
-                            <!-- Need to sort items by project title alphabettically -->
+                            <!-- 
+                                Sort projects by project title alphabettically 
+                            -->
 
                             <div class="row">
                                 {{ range ((where .Pages "Params.project.status" "open") sort .Pages "Params.project.title" "desc" )  }}

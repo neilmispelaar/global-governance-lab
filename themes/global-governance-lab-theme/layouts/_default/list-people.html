@@ -25,7 +25,9 @@
                         <section>
                             <h2 class="text-dark-blue pb-3">Faculty</h2>
                             
-                            <!-- Sort people alphabetically by last name -->
+                            <!-- 
+                                Sort people alphabetically by last name
+                            -->
 
                             <ul class="row list-unstyled">
                                 {{ range ((where .Pages "Params.person.category" "faculty") sort .Pages "Params.person.LastName" "desc") }}

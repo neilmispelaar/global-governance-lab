@@ -6,7 +6,7 @@
 
 	<h1>People</h1>
 
-	<p class="page-lead">The WED Lab is comprised of interdisciplinary researchers working on projects related to women's empowerment in developing countries.</p>
+	<p class="page-lead">The Global Governance Research-to-Practice Lab is a team of interdisciplinary researchers working on projects related to global issues in international development.</p>
 
 	{{ $faculty := (where .Pages "Params.person.category" "==" "faculty") }}
 	{{ $facultyCount := len $faculty }}
@@ -26,15 +26,35 @@
 	{{ end }}
 
 
-	{{ $practice := (where .Pages "Params.person.category" "==" "practice") }}
-	{{ $practiceCount := len $practice }}
+	{{ $practiceGg := (where .Pages "Params.person.category" "==" "practice-gg") }}
+	{{ $practiceGgCount := len $practiceGg }}
 
-	{{ if gt $practiceCount 0 }}
+	{{ if gt $practiceGgCount 0 }}
+
+		<h2>Professors of Practice in Global Governance</h2>
+
+		<p>Professors of Practice in Global Governance are selected based on their practical achievements to date in promoting better global governance. Current and previous Professors of Practice in Global Governance are:</p>
+
+		<ul class="row list-unstyled">
+		{{ range sort (where .Pages "Params.person.category" "practice-gg") "Params.person.lastname" }}
+
+			{{ template "personCard" . }}
+
+		{{ end }}
+		</ul>
+
+	{{ end }}
+
+
+	{{ $practiceGeneral := (where .Pages "Params.person.category" "==" "practice-general") }}
+	{{ $practiceGeneralCount := len $practiceGeneral }}
+
+	{{ if gt $practiceGeneralCount 0 }}
 
 		<h2>Professors of Practice</h2>
 
 		<ul class="row list-unstyled">
-		{{ range sort (where .Pages "Params.person.category" "practice") "Params.person.lastname" }}
+		{{ range sort (where .Pages "Params.person.category" "practice-gg") "Params.person.lastname" }}
 
 			{{ template "personCard" . }}
 
@@ -47,7 +67,7 @@
 	{{ $research := (where .Pages "Params.person.category" "==" "research") }}
 	{{ $researchCount := len $research }}
 
-	{{ if gt $practiceCount 0 }}
+	{{ if gt $researchCount 0 }}
 
 		<h2>Research Associates</h2>
 

@@ -54,12 +54,12 @@
                         </section>
 
                         <section>
-                            <h2 class="text-dark-blue pb-3">Professors of Practice</h2>
+                            <h2 class="text-dark-blue pb-3">Professors of Practice in Global Governance</h2>
 
                             <p class="font-size-r1-6 pb-4">Professors of Practice in Global Governance are selected based on their practical achievements to date in promoting better global governance. Current and previous Professors of Practice in Global Governance are:</p>
 
                             <ul class="row list-unstyled">
-                                {{ range where .Pages "Params.person.category" "practice" }}
+                                {{ range where .Pages "Params.person.category" "practice-gg" }}
                                     <li class="col-sm-6 col-md-6 col-lg-4 mb-3 mb-sm-4">
                                         <div class="gg-lab-card-proj p-3 h-100 d-flex flex-column">
                                             <img src="{{.Params.Person.ImgSrc | relURL }}" alt="" class="img-fluid" />
@@ -82,6 +82,34 @@
                             </ul>
                         </section>
     
+
+                        <section>
+                            <h2 class="text-dark-blue pb-3">Professors of Practice</h2>
+
+                            <ul class="row list-unstyled">
+                                {{ range where .Pages "Params.person.category" "practice-general" }}
+                                    <li class="col-sm-6 col-md-6 col-lg-4 mb-3 mb-sm-4">
+                                        <div class="gg-lab-card-proj p-3 h-100 d-flex flex-column">
+                                            <img src="{{.Params.Person.ImgSrc | relURL }}" alt="" class="img-fluid" />
+                                            <div class="gg-lab-card-proj-body" style="padding:0px;">
+                                                <div>
+                                                    <h3 class="h4 pt-2">{{ .Params.Person.FirstName }} {{ .Params.Person.LastName }}</h3>
+                                                    <p>{{ .Params.Person.Title }}</p>
+                                                </div>
+                                            </div>
+                                            <div class="gg-lab-card-proj-footer mt-auto" style="padding: 0px;">
+                                                <p>
+                                                    <a href="{{.Permalink | relURL }}" class="btn btn-green"> 
+                                                        Learn more <span class="sr-only">TODO</span>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                {{ end }}
+                            </ul>
+
+
                         <section>
                             <h2 class="text-dark-blue pb-3">Alumni</h2>
                             <ul class="row list-unstyled">

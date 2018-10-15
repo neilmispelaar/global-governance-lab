@@ -17,7 +17,7 @@
 		<h2>Open Projects</h2>
 
 		<ul class="row list-unstyled">
-		{{ range where .Pages "Params.project.status" "open" }}
+		{{ range sort (where .Pages "Params.project.status" "open") "Params.project.title" }}
 
 			{{ template "projectCard" . }}
 
@@ -36,7 +36,7 @@
 		<h2>Closed Projects</h2>
 
 		<ul class="row list-unstyled">
-		{{ range where .Pages "Params.project.status" "closed" }}
+		{{ range sort (where .Pages "Params.project.status" "closed") "Params.project.title" }}
 
 			{{ template "projectCard" . }}
 

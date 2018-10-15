@@ -1,0 +1,107 @@
+{{ define "main" }}
+
+	{{ partial "site/breadcrumbs.html" . }}
+
+	<div class="container">
+
+
+	<h1>Publications</h1>
+
+		<p class="page-lead">Selected publication produced by WED Lab members are listed on this page. Publications include journal articles, books and book chapters, media coverage, and policy briefs.</p>
+
+		{{ $journals := (where $.Site.Data.publications.entries "type" "==" "Journals") }}
+		{{ $journalsCount := len $journals }}
+
+		{{ if gt $journalsCount 0 }}
+
+		<h2>Journals</h2>
+
+		<ul class="row list-unstyled">
+		{{ range sort (where $.Site.Data.publications.entries "type" "Journals") "year" "desc" }}
+
+			{{ template "publicationCard" . }}
+
+		{{ end }}
+		</ul>
+
+		{{ end }}
+
+		{{ $books := (where $.Site.Data.publications.entries "type" "==" "Books and Chapters in Books") }}
+		{{ $booksCount := len $books }}
+
+		{{ if gt $booksCount 0 }}
+
+		<h2>Books and Chapters in Books</h2>
+
+		<ul class="row list-unstyled">
+		{{ range sort (where $.Site.Data.publications.entries "type" "Books and Chapters in Books") "year" "desc" }}
+
+			{{ template "publicationCard" . }}
+
+		{{ end }}
+		</ul>
+
+		{{ end }}
+
+
+		{{ $medaicoverage := (where $.Site.Data.publications.entries "type" "==" "Media Coverage") }}
+		{{ $medaicoverageCount := len $medaicoverage }}
+
+		{{ if gt $medaicoverageCount 0 }}
+
+		<h2>Media Coverage</h2>
+
+		<ul class="row list-unstyled">
+		{{ range sort (where $.Site.Data.publications.entries "type" "Media Coverage") "year" "desc" }}
+
+			{{ template "publicationCard" . }}
+
+		{{ end }}
+		</ul>
+
+		{{ end }}
+
+
+		{{ $policybriefs := (where $.Site.Data.publications.entries "type" "==" "Policy Brief") }}
+		{{ $policybriefsCount := len $policybriefs }}
+
+		{{ if gt $policybriefsCount 0 }}
+
+		<h2>Policy Briefs</h2>
+
+		<ul class="row list-unstyled">
+		{{ range sort (where $.Site.Data.publications.entries "type" "Policy Brief") "year" "desc" }}
+
+			{{ template "publicationCard" . }}
+
+		{{ end }}
+		</ul>
+
+		{{ end }}
+
+
+	</div>
+
+{{ end }}
+
+{{ define "publicationCard" }}
+
+	<li class="col-12 my-3">
+		<div class="people-card-container">
+			<div class="people-name">
+				<h3 class="mt-1"><span class="sr-only">Publication Title:</span>{{ .title }}</h3>
+			</div>
+			<div class="people-author">
+				<span class="sr-only">Author: </span>{{ .authors }}
+			</div>
+			<div class="people-title">
+				<p><span class="sr-only">Source: </span>{{ .source }}, <span class="sr-only">Year: </span>{{ .year }}</p></p>
+				<p><span class="badge badge-light-turqouise">{{ .type }}</span></p>
+			</div>
+			<div class="people-btn">
+				<a href="{{.href}}" class="btn btn-green">Read more</a>
+			</div>
+		</div>
+	</li>
+
+{{ end }}

@@ -1,0 +1,28 @@
+	<!-- Start Breadcrumb Section -->
+	<div class="container-fluid bg-dark-blue">
+		<div class="container">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					{{ template "breadcrumb" dict "currentPage" .Page "id" .UniqueID }}
+				</ol>
+			</nav>
+		</div>
+	</div>
+	<!-- End Breadcrumb Section -->
+
+{{ define "breadcrumb" }}
+	{{ if .currentPage.Parent }}
+		{{ template "breadcrumb" dict "currentPage" .currentPage.Parent }}
+	{{ end }}
+
+		{{ if eq .id .currentPage.UniqueID }}
+			<li class="breadcrumb-item active" aria-current="page">
+				{{ .currentPage.Title }}
+			</li>
+		{{ else }}
+			<li class="breadcrumb-item">
+				<a href="{{ .currentPage.URL }}">{{ .currentPage.Title }}</a>
+			</li>
+		{{ end }}
+	</li>
+{{ end }}

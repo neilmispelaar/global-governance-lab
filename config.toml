@@ -1,25 +1,17 @@
 
-# DEVELOPMENT ADDRESS 
+# DEVELOPMENT ADDRESS
 baseURL = "/"
 
 
-# PRODUCTION ADDRESS 
+# PRODUCTION ADDRESS
 #baseURL = "https://globalgovernance.lab.mcgill.ca/"
 
 
 # HUGO SETTINGS
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm", "sitemap"]
-theme = "global-governance-lab-theme"
+theme = "hugo-gg-lab-v2"
 
 
-# SITE SETTINGS 
+# SITE SETTINGS
 title = "Global Governance Lab"
 languageCode = "en-ca"
-sectionPagesMenu = "main"
-
-[menu]
-    [[menu.main]]
-        name = "Home"
-        identifier = "home"
-        url = "/"
-        weight = 1

@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="{{ .Site.LanguageCode }}">
+
+	<head>
+
+		{{ block "metadata" . }}{{ partial "site/metadata.html" . }}{{ end }}
+
+		{{ block "css" . }}{{ partial "site/css.html" . }}{{ end }}
+
+		{{ block "twitter-card" . }}{{ partial "site/twitter-card.html" . }}{{ end }}
+
+		{{ block "open-graph-data" . }}{{ partial "site/open-graph-data.html" . }}{{ end }}
+
+		{{ block "favicons" . }}{{ partial "site/favicons" . }}{{ end }}
+
+		{{ block "nojs" . }}{{ partial "site/nojs.html" . }}{{ end }}
+
+	</head>
+
+	<body>
+		<!--[if lte IE 9]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+
+		{{ block "skipnav" . }}{{ partial "site/skipnav.html" . }}{{ end }}
+
+		{{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
+
+		<main role="main" property="mainContentOfPage">
+			{{/*
+			{{if not .IsHome}}
+			<div class="container-fluid wl-heading-container">
+				<div class="container">
+				<h1 class="display-1" id="cont">{{ .CurrentSection.Title }}</h1>
+				</div>
+			</div>
+			{{end}}
+			*/}}
+			{{ block "main" . }}{{ end }}
+		</main>
+
+		{{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}
+
+        {{ block "scripts" . }}{{ partial "site/footerresources.html" . }}{{ end }}
+
+	</body>
+
+</html>

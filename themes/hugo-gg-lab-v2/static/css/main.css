@@ -1,0 +1,966 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   SVG custom styles
+   ========================================================================== */
+
+/**
+ * SVG Icons - svgicons.sparkk.fr
+ */
+ .svg-icon {
+    width: 1em;
+    height: 1em;
+  }
+
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #000;
+  }
+
+  .svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+  }
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	background-color: #f1f3f3;
+	color: #515353
+}
+
+a {
+	color: #1fa5ac;
+}
+
+a:hover {
+	color: #16767b;
+	text-decoration: underline;
+}
+
+
+.wl-heading-container {
+	background-color: #23BDC5;
+	margin: 0px 0px 35px 0px;
+	padding: 25px 0px 25px 0px;
+	color: #ffffff;
+}
+
+.wl-heading-container h1 {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* ==========================================================================
+   People Card styles
+   ========================================================================== */
+
+.people-card-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	margin: 0px 0px 0px 0px;
+	padding: 25px;
+	height: 100%;
+	background-color: #fbfbfb;
+	border-radius: 10px;
+	box-shadow:0 20px 50px rgba(0,0,0,.1);
+
+	transition: 0.2s ease-in;
+}
+
+.people-card-container:hover {
+	box-shadow:0 30px 70px rgba(0,0,0,.2);
+	background-color: #ffffff;
+	transition: 0.2s ease-in;
+}
+
+.people-card-container .people-name {
+	order: 1;
+}
+
+
+.people-card-container .people-author {
+	order: 2;
+	font-weight: 500 !important;
+	font-size: 1.2rem !important;
+}
+
+.people-card-container .people-name h3 {
+	font-weight: 400 !important;
+	font-size: 1.4rem !important;
+}
+
+.people-card-container .people-img {
+	order: -1;
+}
+
+.people-card-container .people-title {
+	flex-grow: 1;
+	order: 3;
+
+	color: #828484;
+	font-size: 1.1rem;
+	padding: 0px 0px 10px 0px;
+	border-bottom: 1px solid #e4e7e8;
+}
+
+.people-card-container .people-btn {
+	order: 4;
+
+	align-self: start;
+	justify-content: flex-end;
+	margin-top: 20px;
+}
+
+.badge-light-turqouise {
+	color: #ffffff;
+	background-color: #23BDC5;
+	border-radius: 10px;
+}
+
+
+/* ==========================================================================
+   Header Logo styles (v2)
+   ========================================================================== */
+
+.wl-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 35px 0px 35px 0px;
+}
+
+.wl-menu .wl-menu-logos {
+	display: flex;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.wl-menu .wl-menu-logos li:last-child {
+	margin-left: 20px;
+}
+
+.wl-menu ul.wl-menu-nav {
+	display: flex;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.wl-menu ul.wl-menu-nav li a {
+	color: #a1a3a3;
+	display: block;
+
+	padding: 5px 25px 5px 25px;
+	margin: 15px 10px 15px 0px;
+	border-right: 1px solid #c8d0d0;
+	text-decoration: none;
+}
+
+.wl-menu ul.wl-menu-nav li:last-child a {
+	border-right: none;
+}
+
+
+.wl-menu ul.wl-menu-nav li a.active {
+	color: #828484;
+	/*border-bottom: 2px solid #828484;*/
+}
+
+.wl-menu ul.wl-menu-nav li a:hover {
+	color: #828484;
+	transition: 0.2s ease-in;
+	text-decoration: underline;
+}
+
+.wl-menu .menuOpenButtonContainer,
+.wl-menu .wl-menu-container .menuCloseButton {
+	display: none;
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+	.wl-menu {
+		flex-direction: column;
+	}
+
+	.wl-menu .wl-menu-logos {
+		justify-content: space-around;
+	}
+
+	.wl-menu ul.wl-menu-nav {
+		flex-direction: column;
+		align-items: center;
+
+		margin: 50px 0px 50px 0px;
+	}
+
+	.wl-menu ul.wl-menu-nav li a {
+		border: none;
+		color: #222;
+		font-weight: 700 !important;
+		display: block;
+
+		padding: 15px 0px 15px 0px;
+		margin: 0px;
+	}
+
+
+	.wl-menu .menuOpenButtonContainer {
+		align-self: center;
+	}
+
+	.wl-menu .menuOpenButtonContainer,
+	.wl-menu .wl-menu-container .menuCloseButton {
+		display: block;
+	}
+
+	.wl-menu .wl-menu-container {
+		position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        overflow: auto;
+        z-index: 1000;
+        background-color: #c8d0d0 !important;
+	}
+
+	.wl-menu .wl-menu-container.open {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+
+        transition: opacity .35s, visibility .35s, height .35s;
+	}
+
+	.menuCloseButton { margin-left: auto; margin-right: auto;}
+
+}
+
+/* ==========================================================================
+   Footer styles
+   ========================================================================== */
+
+.wl-footer-row-1-container {
+	background-color: #3A6EB6;
+	color: #fff;
+	padding: 50px 0px 50px 0px;
+	margin-top: 100px;
+}
+
+.wl-footer-row-1-container a {
+	color: #ffffff;
+}
+
+ul.wl-footer-nav {
+	list-style: none;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+ul.wl-footer-nav li a {
+	color: #fff;
+	display: block;
+	padding: 15px 0px 15px 0px;
+	text-transform: uppercase;
+}
+
+.wl-footer-row-2-container {
+	background-color: #e4e7e8;
+	padding: 50px 0px 50px 0px;
+}
+
+.wl-footer-row-2-container .wl-footer-row-2-flex-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.wl-footer-row-2-container .wl-footer-row-2-flex-content p {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.wl-footer-row-2-container .wl-footer-row-2-flex-content ul.wl-footer-logos {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+
+}
+
+.wl-footer-row-2-container .wl-footer-row-2-flex-content ul.wl-footer-logos li:last-child {
+	/*border-left: 1px solid #c8d0d0;*/
+	padding: 0px 0px 0px 40px;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+	ul.wl-footer-nav {
+		text-align: center;
+		padding-bottom: 40px;
+		border-bottom: 1px solid #ffffff;
+	}
+
+	.wl-footer-row-2-container .wl-footer-row-2-flex-content {
+		flex-direction: column;
+	}
+
+	.wl-footer-row-2-container .wl-footer-row-2-flex-content ul.wl-footer-logos {
+		flex-direction: column;
+	}
+
+	.wl-footer-row-2-container .wl-footer-row-2-flex-content ul.wl-footer-logos li {
+		padding: 40px 0px 40px 0px;
+	}
+
+	.wl-footer-row-2-container .wl-footer-row-2-flex-content ul.wl-footer-logos li:last-child {
+		padding: 0px 0px 0px 0px;
+	}
+
+}
+
+
+/* ==========================================================================
+   Breadcrumb styles
+   ========================================================================== */
+
+.breadcrumb-border-top {
+	/*border-top: 30px solid #23BDC5;*/
+}
+
+ol.breadcrumb {
+	color: #ffffff !important;
+	background-color: inherit;
+	border-radius: 0px;
+	margin: 0px 0px 0px 0px;
+
+	padding: 15px 15px 15px 0px;
+}
+
+.breadcrumb .breadcrumb-item::before {
+	color: #ffffff !important;
+}
+
+
+.breadcrumb .breadcrumb-item a,
+.breadcrumb .breadcrumb-item.active{
+	color: #ffffff !important;
+}
+
+
+/* ==========================================================================
+   Text, Heading and Display Styles
+   ========================================================================== */
+
+main {
+	font-size: 1.2rem;
+}
+
+.page-lead {
+	font-size: 1.4rem !important;
+}
+
+.display-1, {
+	font-size: 2.5rem !important;
+	font-weight: 300 !important;
+}
+.display-2, h1, .h1 {
+	font-size: 3.0rem !important;
+	font-weight: 300 !important;
+}
+.display-3, h2, .h2 {
+	font-size: 2.5rem !important;
+	font-weight: 300 !important;
+}
+.display-4, h3, .h3 {
+	font-size: 2.0rem !important;
+	font-weight: 300 !important;
+}
+
+
+@media (min-width: 576px) {
+
+	/* This is what you see on desktop */
+	.display-1 {
+		font-size: 5rem !important;
+		font-weight: 300 !important;
+	}
+	.display-2, h1, .h1 {
+		font-size: 3.3rem !important;
+		font-weight: 300 !important;
+	}
+	.display-3, h2, .h2 {
+		font-size: 2.9rem !important;
+		font-weight: 300 !important;
+	}
+	.display-4, h3, .h3  {
+		font-size: 2.7rem !important;
+		font-weight: 300 !important;
+	}
+
+}
+
+
+
+/* ==========================================================================
+   Button styles
+   ========================================================================== */
+
+.btn-orange {
+	background-color: #F15B27;
+	color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-orange:hover {
+	background-color: #d35022;
+	color: #ffffff;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.10);
+}
+
+.btn-red {
+	background-color: #DC3833;
+	color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-red:hover {
+	background-color: #a52a26;
+	color: #ffffff;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.10);
+}
+
+.btn-outline-red {
+	background-color: #ffffff;
+	border: 1px solid #DC3833;
+	color: #DC3833;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-outline-red:hover {
+	background-color: #DC3833;
+	color: #ffffff;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.10);
+}
+
+
+
+/* ==========================================================================
+   Global Governance Lab Button Styles
+   ========================================================================== */
+.btn-green {
+    background-color: #70B243;
+    color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-green:hover {
+    background-color: #466f2a;
+    color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.10);
+}
+
+
+.btn-outline-green {
+    background-color: #ffffff;
+    border: 1px solid #70B243;
+    color: #70B243;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-outline-green:hover {
+    background-color: #466f2a;
+    color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.10);
+}
+
+
+
+/* ==========================================================================
+   Global Governance Lab Theme Colour Styles
+   ========================================================================== */
+
+.bg-light-blue {
+    background-color: #2BACE2   !important;
+}
+.bg-dark-blue {
+    background-color: #3A6EB6   !important;
+}
+.bg-light-yellow {
+    background-color: #fff5e2  !important;
+}
+.bg-yellow {
+    background-color: #FCB216   !important;
+}
+.bg-green {
+    background-color: #70B243   !important;
+}
+.bg-dark-green {
+    background-color: #466f2a   !important;
+}
+
+
+.text-light-blue {
+    color: #2BACE2   !important;
+}
+.text-dark-blue {
+    color: #3A6EB6   !important;
+}
+.text-yellow {
+    color: #FCB216   !important;
+}
+.text-green {
+    color: #70B243   !important;
+}
+.text-dark-gray {
+    color: #666666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Global Governance Lab Home Page Styles
+   Borrowing from GG site - REFACTOR
+   ========================================================================== */
+
+   .gg-lab-home-project-feature {
+    position: relative;
+    width: 100%;
+}
+
+.gg-lab-home-project-feature .gg-lab-home-project-feature-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: brightness(70%);
+}
+
+.gg-lab-home-project-feature .gg-lab-home-project-feature-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-weight: 700;
+    font-size:2.1rem;
+    line-height: 1.1;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    .gg-lab-home-project-feature .gg-lab-home-project-feature-text {
+        font-size:1.1rem;
+        padding: 0px;
+    }
+
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+
+
+.bg-grey-100 { background-color: #f1f3f3; }
+.bg-grey-200 { background-color: #e4e7e8; }
+.bg-grey-300 { background-color: #d6dbdc; }
+.bg-grey-400 { background-color: #c8d0d0; }
+
+.bg-grey-900 { background-color: #828484;}
+.bg-light-turqoise { background-color: #79CED8   !important; }
+.bg-dark-turqoise { background-color: #23BDC5   !important; }
+.bg-orange { background-color: #F15B27   !important; }
+.bg-red { background-color: #DC3833   !important; }
+.bg-white { background-color: #ffffff   !important; }
+
+.text-light-turqoise { color: #79CED8   !important; }
+.text-dark-turqoise { color: #23BDC5   !important; }
+.text-orange { color: #F15B27   !important; }
+.text-red { color: #DC3833   !important; }
+
+.text-grey-100 { color: #f1f3f3;}
+.text-grey-200 { color: #e4e7e8;}
+.text-grey-300 { color: #d6dbdc;}
+.text-grey-400 { color: #c8d0d0;}
+.text-grey-500 { color: #bac4c4;}
+.text-grey-600 { color: #adb8b9;}
+.text-grey-700 { color: #9facad;}
+.text-grey-800 { color: #91a0a1;}
+.text-grey-900 { color: #828484;}
+
+
+
+/**
+ * Women's Economic Development Lab: Theme
+ * Version 0.1
+ */
+
+
+
+
+  /**
+   * Body and HTML Utilities
+   */
+
+
+  body {
+
+  }
+
+
+  /*
+   * Theme Background Colours
+   */
+
+
+  /*
+   * Theme Text Colours
+   */
+
+  /*
+   * Font Size Utilities
+   */
+  .font-size-r1-1 {font-size: 1.1rem;}
+  .font-size-r1-2 {font-size: 1.2rem;}
+  .font-size-r1-3 {font-size: 1.3rem;}
+  .font-size-r1-4 {font-size: 1.4rem;}
+  .font-size-r1-5 {font-size: 1.5rem;}
+  .font-size-r1-6 {font-size: 1.6rem;}
+  .font-size-r1-7 {font-size: 1.7rem;}
+  .font-size-r1-8 {font-size: 1.8rem;}
+  .font-size-r1-9 {font-size: 1.9rem;}
+  .font-size-r2-0 {font-size: 2.0rem;}
+
+
+  /*
+   * Button Styles
+   */
+
+
+  /*
+  h1, .h1 { font-size: 4.0rem !important; }
+  h2, .h2 { font-size: 3.0rem !important; padding: 1.8rem 0; }
+  h3, .h3 { font-size: 2.5rem !important; padding: 1.5rem 0;}
+  h4, .h4 { font-size: 2.0rem !important; padding: 1.5rem 0;}
+  h5, .h5 { font-size: 1.5rem !important; padding: 1.5rem 0;}
+  h6, .h6 { font-size: 1.0rem !important; padding: 1.5rem 0;}
+
+  .h1-404 {
+      padding-top: 2rem;
+  }
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -4,10 +4,154 @@
 
 	<div class="container">
 
+		<h1>Publications</h1>
 
-	<h1>Publications</h1>
+		<p class="page-lead">Selected publications produced by Global Governance Lab members are listed on this page.
+			Publications include journal articles, books and book chapters, media coverage, policy briefs and research bulletins.</p>
 
-		<p class="page-lead">Selected publication produced by WED Lab members are listed on this page. Publications include journal articles, books and book chapters, media coverage, and policy briefs.</p>
+		<div id="publicationlist">
+
+			Showing
+
+			<select name="topic" id="filter-type">
+				<option value="all">All Publication Types</option>
+				<option value="Journal Article">Journal Articles</option>
+				<option value="Books and Book Chapters">Books and Book Chapters</option>
+				<option value="Media Coverage">Media Coverage</option>
+				<option value="Policy Briefs">Policy Briefs</option>
+			</select>
+
+			related to
+
+			<select name="type" id="filter-topic">
+				<option value="all">All topics</option>
+				<option value="Natural resource conflicts and trade-offs">Natural Resources</option>
+				<option value="Migration and Refugees">Migration and Refugees</option>
+				<option value="Governance">Governance</option>
+			</select>
+
+			<ul class="list list-unstyled">
+
+				{{ range (sort $.Site.Data.publications.booksbookchapters.entries "year" "desc") }}
+				<li>
+					<div class="pubcard booksbookchapters
+						{{ if eq .topic "Governance" }}
+							governance
+						{{ end }}
+						{{ if eq .topic "Natural resource conflicts and trade-offs" }}
+							resources
+						{{ end }}
+						{{ if eq .topic "Migration and Refugees" }}
+							migration
+						{{ end }}
+						">
+						<section>
+							<div class="pubcard-body">
+								<a target="_blank" href="{{ .href }}">
+									<h2 class="pubcard-title pubtitle">{{ .title }}</h2>
+									<p class="pubcard-type pubauthor">{{ .authors }}</p>
+									<p class="pubcard-type pubtype sr-only">Books and Book Chapters</p>
+									<p class="pubcard-source pubsource">{{ .source }}, <span class="pubyear">{{ .year }}</span></p>
+									<p class="pubcard-topic"><span class="small pubtopic">{{ .topic }}</span></p>
+								</a>
+							</div>
+						</section>
+					</div>
+				</li>
+				{{ end }}
+
+				{{ range (sort $.Site.Data.publications.mediacoverage.entries "year" "desc") }}
+				<li>
+					<div class="pubcard mediacoverage
+						{{ if eq .topic "Governance" }}
+							governance
+						{{ end }}
+						{{ if eq .topic "Natural resource conflicts and trade-offs" }}
+							resources
+						{{ end }}
+						{{ if eq .topic "Migration and Refugees" }}
+							migration
+						{{ end }}
+						">
+						<div class="pubcard-body">
+							<a target="_blank" href="{{ .href }}">
+								<h2 class="pubcard-title pubtitle">{{ .title }}</h2>
+								<p class="pubcard-type pubauthor">{{ .authors }}</p>
+								<p class="pubcard-type pubtype sr-only">Media Coverage</p>
+
+								<p class="pubcard-source pubsource">{{ .source }}, <span class="pubyear">{{ .year }}</span></p>
+								<p class="pubcard-topic "><span class="small pubtopic">{{ .topic }}</span></p>
+							</a>
+						</div>
+					</div>
+				</li>
+				{{ end }}
+
+				{{ range (sort $.Site.Data.publications.journalarticles.entries "year" "desc") }}
+				<li>
+					<div class="pubcard journalarticles
+						{{ if eq .topic "Governance" }}
+							governance
+						{{ end }}
+						{{ if eq .topic "Natural resource conflicts and trade-offs" }}
+							resources
+						{{ end }}
+						{{ if eq .topic "Migration and Refugees" }}
+							migration
+						{{ end }}
+						">
+						<div class="pubcard-body">
+							<a target="_blank" href="{{ .href }}">
+								<h2 class="pubcard-title pubtitle">{{ .title }}</h2>
+								<p class="pubcard-type pubauthor">{{ .authors }}</p>
+								<p class="pubcard-type pubtype sr-only">Journal Article</p>
+								<p class="pubcard-source pubsource">{{ .source }}, <span class="pubyear">{{ .year }}</span></p>
+								<p class="pubcard-topic "><span class="small pubtopic">{{ .topic }}</span></p>
+							</a>
+						</div>
+					</div>
+				</li>
+				{{ end }}
+				{{ range (sort $.Site.Data.publications.policybriefs.entries "year" "desc") }}
+				<li>
+					<div class="pubcard
+						{{ if eq .topic "Governance" }}
+							governance
+						{{ end }}
+						{{ if eq .topic "Natural resource conflicts and trade-offs" }}
+							resources
+						{{ end }}
+						{{ if eq .topic "Migration and Refugees" }}
+							migration
+						{{ end }}">
+						<div class="pubcard-body">
+							<a target="_blank" href="{{ .href }}">
+								<h2 class="pubcard-title pubtitle">{{ .title }}</h2>
+								<p class="pubcard-type pubauthor">{{ .authors }}</p>
+								<p class="pubcard-type pubtype sr-only">Policy Briefs</p>
+								<p class="pubcard-source pubsource">{{ .source }}, <span class="pubyear">{{ .year }}</span></p>
+								<p class="pubcard-topic"><span class="small pubtopic">{{ .topic }}</span></p>
+							</a>
+						</div>
+					</div>
+				</li>
+				{{ end }}
+
+			</ul>
+			<nav aria-label="Page navigation example">
+				<ul class="pagination"></ul>
+			</nav>
+		</div>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+	</div>
+
+	{{/*
+
+	<div class="container">
+
+		<h1>Publications</h1>
+
+		<p class="page-lead">Selected publications produced by Global Governance Lab members are listed on this page. Publications include journal articles, books and book chapters, media coverage, policy briefs and research bulletins.</p>
 
 		{{ $journals := (where $.Site.Data.publications.entries "type" "==" "Journals") }}
 		{{ $journalsCount := len $journals }}
@@ -79,8 +223,7 @@
 
 		{{ end }}
 
-
-	</div>
+	*/}}
 
 {{ end }}
 

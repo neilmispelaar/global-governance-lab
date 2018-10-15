@@ -630,6 +630,104 @@ main {
 
 
 
+/* ==========================================================================
+   Global Governance Lab Project Publication Card Styles
+   ========================================================================== */
+   .pubcard {
+    background-color: #ffffff;
+    margin: 20px 0px 20px 0px;
+}
+
+.pubcard.governance {
+    border-left: 10px solid #2BACE2;
+    background-color: #e4f5fb;
+}
+
+.pubcard.resources {
+    border-left: 10px solid #466f2a;
+    background-color: #e8ede4;
+}
+
+.pubcard.migration {
+    border-left: 10px solid #FCB216;
+    background-color: #fff5e2;
+}
+
+.pubcard.policybriefs {
+    border-left: 10px solid #2BACE2;
+    background-color: #e4f5fb;
+}
+
+.pubcard .pubcard-body a {
+    text-decoration: none;
+    color: #666666;
+    display: block;
+}
+
+.pubcard .pubcard-body a:hover .pubcard-title {
+    text-decoration: underline;
+}
+
+.pubcard-body {
+    padding: 0px 20px 0px 10px;
+}
+
+.pubcard-body {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+}
+
+.pubcard-title {
+	font-size: 1.3em !important;
+}
+
+.pubcard-type {
+    font-size: 1.0em;
+    margin: 0;
+    padding: 0;
+}
+
+.pubcard-topic {
+    font-size: 1.0em;
+    margin: 0;
+    padding: 0;
+}
+
+.pubcard-source {
+    font-size: 1.0em;
+    margin: 0;
+    padding: 0;
+}
+
+.pubcard-year {
+    font-size: 1.0em;
+    margin: 0;
+}
+
+.pubcard.mediacoverage .pubcard-title {
+    color: #3A6EB6;
+}
+
+.pubcard.resources .pubcard-title {
+    color: #466f2a;
+}
+
+.pubcard.governance .pubcard-title {
+    color: #2BACE2;
+}
+
+.pubcard.migration .pubcard-title {
+    color: #FCB216;
+}
+
+.pagination li {
+  display:inline-block;
+  padding:5px;
+}
+
+
 
 
 

@@ -21,6 +21,183 @@
   }
 }());
 
+
+// Place any jQuery/helper plugins in here.
+
+
+
+jQuery(document).ready(function ($) {
+
+
+    // Menu Navigation Handler
+    var gglabPublications = {
+
+        init : function () {
+
+            /* Only run on pages where the list exists */
+            if ( $('#publicationlist').length) {
+
+                var options = {
+                    valueNames: [ 'pubtitle', 'pubtype', 'pubtopic', 'pubsource', 'pubyear' ],
+                    page: 20,
+                    pagination: true
+                };
+
+
+                this.publicationsList = new List('publicationlist', options);
+
+                $('#filter-topic').on('change', this.updateList.bind(this));
+                $('#filter-type').on('change', this.updateList.bind(this));
+
+                /* Show All Topics Button Handler
+                $('#filter-topic').change(function() {
+                    var selection = this.value;
+                    if (selection) {
+
+                        if (selection == "all") {
+                            publicationsList.filter();
+                        }
+
+                        if (selection == "nr") {
+                            publicationsList.filter(function(item) {
+                                if (item.values().pubtopic == "Natural resource conflicts and trade-offs") {
+                                return true;
+                                } else {
+                                return false;
+                                }
+                            });
+                        }
+
+                        if (selection == "mr") {
+                            publicationsList.filter(function(item) {
+                                if (item.values().pubtopic == "Migration and Refugees") {
+                                return true;
+                                } else {
+                                return false;
+                                }
+                            });
+                        }
+
+                        if (selection == "go") {
+                            publicationsList.filter(function(item) {
+                                if (item.values().pubtopic == "Governance") {
+                                return true;
+                                } else {
+                                return false;
+                                }
+                            });
+                        }
+
+
+                    }
+
+                    return false;
+
+                });
+                */
+
+                /* Show All Topics Button Handler
+                $('#filter-type').change(function() {
+                    var selection = this.value;
+                    if (selection) {
+
+                        if (selection == "all") {
+                            publicationsList.filter();
+                        }
+
+                        if (selection == "ja") {
+                            publicationsList.filter(function(item) {
+                                if (item.values().pubtype == "Journal Article") {
+                                return true;
+                                } else {
+                                return false;
+                                }
+                            });
+                        }
+
+                        if (selection == "bc") {
+                            publicationsList.filter(function(item) {
+                                if (item.values().pubtype == "Books and Book Chapters") {
+                                return true;
+                                } else {
+                                return false;
+                                }
+                            });
+                        }
+
+                        if (selection == "mc") {
+                            publicationsList.filter(function(item) {
+                                if (item.values().pubtype == "Media Coverage") {
+                                return true;
+                                } else {
+                                return false;
+                                }
+                            });
+                        }
+
+                        if (selection == "pb") {
+                            publicationsList.filter(function(item) {
+                                if (item.values().pubtype == "Policy Brief") {
+                                return true;
+                                } else {
+                                return false;
+                                }
+                            });
+                        }
+                    }
+                    return false;
+                });
+                */
+            }
+        },
+
+        updateList : function () {
+
+            var values_topic = $('#filter-topic').val();
+	        var values_type = $('#filter-type').val();
+
+            console.log(values_topic, values_type);
+
+            this.publicationsList.filter(function (item) {
+                var typeFilter = false;
+                var topicFilter = false;
+
+                if(values_type == "all")
+                {
+                    typeFilter = true;
+                }
+                else
+                {
+                    typeFilter = item.values().pubtype == values_type;
+                }
+
+                if(values_topic == "all")
+                {
+                    topicFilter = true;
+                }
+                else
+                {
+                    topicFilter = item.values().pubtopic == values_topic;
+                }
+
+                return (typeFilter && topicFilter);
+            });
+
+            this.publicationsList.update();
+            //console.log('Filtered: ' + values_gender)
+
+        }
+	}
+
+	 // Initialise the Publications List Object
+	 gglabPublications.init();
+
+});
+
+
+
+
+
 // Place any jQuery/helper plugins in here.
 
 /*!

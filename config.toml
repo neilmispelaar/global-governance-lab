@@ -15,3 +15,7 @@ theme = "hugo-gg-lab-v2"
 # SITE SETTINGS
 title = "Global Governance Lab"
 languageCode = "en-ca"
+
+
+[params]
+  description = "Run by the Institute for the Study of International Development (ISID). The Global Governance Research-to-Practice Lab is bridging the gap between academics, practitioners and policy-makers. It is built around three interconnected nodes: natural resource conflicts and trade-offs, migration and refugees, and governance."

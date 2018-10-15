@@ -36,7 +36,7 @@
 		<p>Professors of Practice in Global Governance are selected based on their practical achievements to date in promoting better global governance. Current and previous Professors of Practice in Global Governance are:</p>
 
 		<ul class="row list-unstyled">
-		{{ range sort (where .Pages "Params.person.category" "practice-gg") "Params.person.lastname" }}
+		{{ range sort (where .Pages "Params.person.category" "practice-gg") "Params.person.title" "desc" }}
 
 			{{ template "personCard" . }}
 
@@ -54,7 +54,7 @@
 		<h2>Professors of Practice</h2>
 
 		<ul class="row list-unstyled">
-		{{ range sort (where .Pages "Params.person.category" "practice-gg") "Params.person.lastname" }}
+		{{ range sort (where .Pages "Params.person.category" "practice-general") "Params.person.lastname" }}
 
 			{{ template "personCard" . }}
 

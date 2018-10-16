@@ -1,0 +1,8 @@
+		<!-- Open Graph Data -->
+		<meta property="og:url" content="{{ .URL | absURL }}"/>
+		<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}"/>
+		<meta property="og:description" content="{{ .Site.Params.description }}"/>
+		<meta property="og:site_name" content="{{ .Site.Title }}" />
+		<meta property="og:image" content='{{ "images/open-graph-data/open-graph-image.png" | absURL }}'/>
+		<meta property="og:image:secure_url" content='{{ "images/open-graph-data/open-graph-image.png" | absURL }}' />
+		<meta property="og:image:alt" content="Logo for {{ .Site.Title }}" />

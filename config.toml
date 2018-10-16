@@ -1,21 +1,22 @@
 
 # DEVELOPMENT ADDRESS
-baseURL = "/"
-
+baseURL = "https://global-governance-lab.netlify.com/"
 
 # PRODUCTION ADDRESS
 #baseURL = "https://globalgovernance.lab.mcgill.ca/"
 
-
 # HUGO SETTINGS
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm", "sitemap"]
-theme = "hugo-gg-lab-v2"
 
-
-# SITE SETTINGS
-title = "Global Governance Lab"
+# LANGUAGE CODE
 languageCode = "en-ca"
 
+# BUILD THEME
+theme = "hugo-gg-lab-v2"
 
+# SITE SETTINGS
+title = "Global Governance Lab at ISID"
+
+# USER DEFINED SITE PARAMETERS
 [params]
   description = "Run by the Institute for the Study of International Development (ISID). The Global Governance Research-to-Practice Lab is bridging the gap between academics, practitioners and policy-makers. It is built around three interconnected nodes: natural resource conflicts and trade-offs, migration and refugees, and governance."

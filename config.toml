@@ -1,9 +1,9 @@
 
 # DEVELOPMENT ADDRESS
-baseURL = "https://global-governance-lab.netlify.com/"
+#baseURL = "https://global-governance-lab.netlify.com/"
 
 # PRODUCTION ADDRESS
-#baseURL = "https://globalgovernance.lab.mcgill.ca/"
+baseURL = "https://globalgovernance.lab.mcgill.ca/"
 
 # HUGO SETTINGS
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm", "sitemap"]

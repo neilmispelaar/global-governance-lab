@@ -1,6 +1,14 @@
 {
     "entries": [
-        {
+		{
+            "title": "Intensification in agriculture-forest frontiers: Land use responses to development and conservation policies in Brazil",
+            "authors": "Garrett, R.D., Koh, I , Lambin, E.F., le Polain de Waroux, Y. , Kastens, J.H. and J.C. Brown",
+            "source": "Global Environmental Change",
+            "topic": "Natural resource conflicts and trade-offs",
+            "year": "2018",
+            "href": "https://www.sciencedirect.com/science/article/pii/S0959378017312669?via%3Dihub"
+        },
+		{
             "title": "Ethnicity and Violence During Democratic Transitions: Evidence from South Africa",
             "authors": "Amodio, F. and G. Chiovelli",
             "source": "Journal of the European Economic Association",
@@ -71,7 +79,7 @@
             "topic": "Governance",
             "year": "2011",
             "href": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9760.2011.00403.x"
-        },       
+        },
         {
             "title": "Challenges in Attributing Avoided Deforestation to Policies and Actors: Lessons from Provincial Forest Zoning in the Argentine Dry Chaco",
             "authors": "Nolte, C., Gobbi, B., le Polain de Waroux, Y., Piquer-Rodríguez, M., Butsic, V. and E. F. Lambin",
@@ -110,7 +118,7 @@
             "source": "Stability: International Journal of Security and Development",
             "topic": "Migration and Refugees",
             "year": "2017",
-            "href": "https://www.stabilityjournal.org/articles/10.5334/sta.562/" 
+            "href": "https://www.stabilityjournal.org/articles/10.5334/sta.562/"
         },
         {
             "title": "Policy Research on the Resolution of Post-Disaster Displacement: Reflections from Haiti and The Philippines",
@@ -118,7 +126,7 @@
             "source": "Journal of Refugee Studies",
             "topic": "Migration and Refugees",
             "year": "2017",
-            "href": "https://meganbradleyca.files.wordpress.com/2017/11/bradley-et-al-researching-the-resolution-of-post-disaster-displacement.pdf" 
+            "href": "https://meganbradleyca.files.wordpress.com/2017/11/bradley-et-al-researching-the-resolution-of-post-disaster-displacement.pdf"
         },
         {
             "title": "The International Organization for Migration (IOM): Gaining Power in the Forced Migration Regime",
@@ -126,7 +134,7 @@
             "source": "Refuge",
             "topic": "Migration and Refugees",
             "year": "2017",
-            "href": "https://meganbradleyca.files.wordpress.com/2017/11/bradley-iom-gaining-power-refuge.pdf" 
+            "href": "https://meganbradleyca.files.wordpress.com/2017/11/bradley-iom-gaining-power-refuge.pdf"
         },
         {
             "title": "Introduction: Accountability and Redress for The Injustices of Displacement",
@@ -134,7 +142,7 @@
             "source": "Journal of Refugee Studies",
             "topic": "Migration and Refugees",
             "year": "2014",
-            "href": "https://meganbradleyca.files.wordpress.com/2017/11/introduction-bradleyduthie.pdf" 
+            "href": "https://meganbradleyca.files.wordpress.com/2017/11/introduction-bradleyduthie.pdf"
         },
         {
             "title": "Rethinking Refugeehood: Statelessness, Repatriation and Refugee Agency",
@@ -142,7 +150,7 @@
             "source": "Review of International Studies",
             "topic": "Migration and Refugees",
             "year": "2014",
-            "href": "https://meganbradleyca.files.wordpress.com/2017/11/rethinking-refugeehood-megan-bradley.pdf" 
+            "href": "https://meganbradleyca.files.wordpress.com/2017/11/rethinking-refugeehood-megan-bradley.pdf"
         },
         {
             "title": "Introductory Note to the African Union Convention for the Protection and Assistance of Internally Displaced Persons in Africa",
@@ -150,7 +158,7 @@
             "source": "International Legal Materials",
             "topic": "Migration and Refugees",
             "year": "2013",
-            "href": "https://meganbradleyca.files.wordpress.com/2017/11/introductory-note-to-kampala-convention.pdf" 
+            "href": "https://meganbradleyca.files.wordpress.com/2017/11/introductory-note-to-kampala-convention.pdf"
         },
         {
             "title": "\"Migrants in Feverland\": State Obligations Towards \"Environmental Refugees\"",
@@ -158,7 +166,7 @@
             "source": "International Journal of Political Theory",
             "topic": "Migration and Refugees",
             "year": "2012",
-            "href": "https://meganbradleyca.files.wordpress.com/2017/11/state-obligations-to-enviro-refugees-1-dec-2011.pdf" 
+            "href": "https://meganbradleyca.files.wordpress.com/2017/11/state-obligations-to-enviro-refugees-1-dec-2011.pdf"
         },
         {
             "title": "Unlocking Protracted Displacement: Central America’s \"Success Story\" Reconsidered",
@@ -174,7 +182,7 @@
             "source": "Journal of International Humanitarian Legal Studies",
             "topic": "Migration and Refugees",
             "year": "2010",
-            "href": "https://meganbradleyca.files.wordpress.com/2017/11/disasters-and-displacement.pdf" 
+            "href": "https://meganbradleyca.files.wordpress.com/2017/11/disasters-and-displacement.pdf"
         },
         {
             "title": "Long-Term Effects of Civil Conflict on Women’s Health Outcomes in Peru",

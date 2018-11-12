@@ -20,6 +20,7 @@
 				<option value="Books and Book Chapters">Books and Book Chapters</option>
 				<option value="Media Coverage">Media Coverage</option>
 				<option value="Policy Briefs">Policy Briefs</option>
+				<option value="Reports">Reports</option>
 			</select>
 
 			related to
@@ -32,6 +33,34 @@
 			</select>
 
 			<ul class="list list-unstyled">
+
+				{{ range (sort $.Site.Data.publications.reports.entries "year" "desc") }}
+				<li>
+					<div class="pubcard reports
+						{{ if eq .topic "Governance" }}
+							governance
+						{{ end }}
+						{{ if eq .topic "Natural resource conflicts and trade-offs" }}
+							resources
+						{{ end }}
+						{{ if eq .topic "Migration and Refugees" }}
+							migration
+						{{ end }}
+						">
+						<section>
+							<div class="pubcard-body">
+								<a target="_blank" href="{{ .href }}">
+									<h2 class="pubcard-title pubtitle">{{ .title }}</h2>
+									<p class="pubcard-type pubauthor">{{ .authors }}</p>
+									<p class="pubcard-type pubtype sr-only">Reports</p>
+									<p class="pubcard-source pubsource">{{ .source }}, <span class="pubyear">{{ .year }}</span></p>
+									<p class="pubcard-topic"><span class="small pubtopic">{{ .topic }}</span></p>
+								</a>
+							</div>
+						</section>
+					</div>
+				</li>
+				{{ end }}
 
 				{{ range (sort $.Site.Data.publications.researchbulletins.entries "year" "desc") }}
 				<li>

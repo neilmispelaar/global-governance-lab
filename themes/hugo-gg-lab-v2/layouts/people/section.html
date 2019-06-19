@@ -69,7 +69,7 @@
 
 	{{ if gt $researchCount 0 }}
 
-		<h2>Research Associates</h2>
+		<h2>Research Assistant</h2>
 
 		<ul class="row list-unstyled">
 		{{ range sort (where .Pages "Params.person.category" "research") "Params.person.lastname" }}
